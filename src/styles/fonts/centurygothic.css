@@ -1,0 +1,95 @@
+@font-face {
+  font-family: "Century Gothic Paneuropean";
+  src: url("/fonts/centurygothic/CenturyGothicPaneuropeanThin.ttf")
+    format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Century Gothic Paneuropean";
+  src: url("/fonts/centurygothic/CenturyGothicPaneuropeanLight.ttf")
+    format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Century Gothic Paneuropean";
+  src: url("/fonts/centurygothic/CenturyGothicPaneuropeanRegular.ttf")
+    format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Century Gothic Paneuropean";
+  src: url("/fonts/centurygothic/CenturyGothicPaneuropeanItalic.ttf")
+    format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Century Gothic Paneuropean";
+  src: url("/fonts/centurygothic/CenturyGothicPaneuropeanBold.ttf")
+    format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Century Gothic Paneuropean";
+  src: url("/fonts/centurygothic/CenturyGothicPaneuropeanBoldItalic.ttf")
+    format("truetype");
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Century Gothic Paneuropean";
+  src: url("/fonts/centurygothic/CenturyGothicPaneuropeanExtraBold.ttf")
+    format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Century Gothic Paneuropean";
+  src: url("/fonts/centurygothic/CenturyGothicPaneuropeanExtraBoldItalic.ttf")
+    format("truetype");
+  font-weight: 800;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Century Gothic Paneuropean";
+  src: url("/fonts/centurygothic/CenturyGothicPaneuropeanBlack.ttf")
+    format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Century Gothic Paneuropean";
+  src: url("/fonts/centurygothic/CenturyGothicPaneuropeanBlackItalic.ttf")
+    format("truetype");
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Century Gothic Paneuropean";
+  src: url("/fonts/centurygothic/CenturyGothicPaneuropeanThinItalic.ttf")
+    format("truetype");
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Century Gothic Paneuropean";
+  src: url("/fonts/centurygothic/CenturyGothicPaneuropeanLightItalic.ttf")
+    format("truetype");
+  font-weight: 300;
+  font-style: italic;
+}
