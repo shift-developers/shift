@@ -3,7 +3,7 @@ import Link from "next/link";
 interface ButtonProps {
   type: "primary" | "secondary";
   text: string;
-  href: string;
+  href?: string;
   color?: "navy" | "blue";
   className?: string;
 }
@@ -31,7 +31,7 @@ const Button = ({
   const styles = type === "primary" ? fillColor : outlineColor;
 
   return (
-    <Link href={href} className={`${baseStyles} ${styles} ${className}`}>
+    <Link href={href ?? ""} className={`${baseStyles} ${styles} ${className}`}>
       {text}
     </Link>
   );

@@ -33,7 +33,8 @@ const ShiftIntro = () => (
             text="Watch a Free Preview"
             href="/"
             type="secondary"
-            className="text-[18px] w-[250px] border-blue text-blue hover:bg-blue hover:text-pure-white"
+            className="text-[18px] w-[250px]"
+            color="blue"
           />
         </div>
       </div>

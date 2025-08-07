@@ -40,9 +40,9 @@ const socialLinks = [
 
 export default function Navbar() {
   return (
-    <header className="fixed top-0 left-0 w-full z-50 backdrop-blur-md bg-white/10 border-b border-white/10 shadow-sm">
+    <header className="fixed top-0 left-0 w-full z-50 backdrop-blur-md bg-blue/40 shadow-sm">
       <div className=" mx-auto py-[20px] flex items-center justify-between px-[160px]">
-        <Logo className="w-[100px]" />
+        <Logo width={100} />
         <div className="flex items-center gap-[100px]">
           <nav className="hidden md:flex space-x-8 text-white font-bold text-[20px] font-proxima">
             {navLinks.map((link) => (

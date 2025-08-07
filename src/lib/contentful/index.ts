@@ -5,5 +5,7 @@ export const contentfulClient = createClient({
   accessToken: process.env.CONTENTFUL_ACCESS_TOKEN!,
 });
 
-export { getTherapists } from "./therapists";
 export { getTags } from "./tags";
+export { getTherapists } from "./therapists";
+export { getTestimonials } from "./testimonials";
+export { getHomepageVideo } from "./homepageVideo";

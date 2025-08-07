@@ -81,7 +81,7 @@ const TherapistSlider = ({ therapists, tags }: Props) => {
 
       <div className="relative w-full">
         {/* Scrollable wrapper with scrollbar */}
-        <div className="overflow-x-scroll scrollbar scrollbar-thumb-gray-400 scrollbar-track-gray-100">
+        <div className="">
           <div
             key={activeTag}
             ref={sliderRef}
