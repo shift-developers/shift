@@ -3,11 +3,11 @@ import Button from "../common/Button";
 
 const MasterSessions = () => {
   return (
-    <section className="w-full mb-[240px]">
-      <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-[45px] items-center">
+    <section className="px-5 lg:px-32 xl:px-48 my-14 lg:my-64">
+      <div className="grid lg:grid-cols-2 gap-[45px] items-center">
         <div className="w-full">
-          <h2 className="text-[48px] font-light leading-tight font-gothic">
-            Master new skills with <br />
+          <h2 className="text-3xl lg:text-5xl font-light leading-tight font-gothic">
+            Master new skills with <br className="max-lg:hidden" />
             <span className="font-bold">SHiFT MasterSessions</span>
           </h2>
 
@@ -15,22 +15,22 @@ const MasterSessions = () => {
             Getting Started Is Simple:
           </p>
 
-          <ul className="mt-[40px] flex flex-col gap-[30px] text-black text-[22px] font-proxima">
-            <li className="flex gap-[20px]">
-              <Check />
+          <ul className="pt-5 lg:mt-10 flex flex-col gap-5 lg:gap-[30px] text-black lg:text-[22px] font-proxima">
+            <li className="flex gap-3 lg:gap-5">
+              <Check className="max-lg:!size-6" />
               <span>Choose a MasterSession that speaks to you.</span>
             </li>
-            <li className="flex gap-[20px]">
+            <li className="flex gap-3 lg:gap-5">
               <div>
-                <Check />
+                <Check className="max-lg:!size-6" />
               </div>
               <span>
                 Join our MasterSession livestreams, events, and Q&As, or move
                 through it solo.
               </span>
             </li>
-            <li className="flex gap-[20px]">
-              <Check />
+            <li className="flex gap-3 lg:gap-5">
+              <Check className="max-lg:!size-6" />
               <span>
                 Use the workbooks to turn learning into lasting change.
               </span>
@@ -43,20 +43,20 @@ const MasterSessions = () => {
         </div>
 
         {/* Right Card */}
-        <div className="flex flex-col items-center bg-pure-white rounded-2xl shadow-md py-[50px] px-[40px] h-full mx-auto gap-[25px]">
+        <div className="flex flex-col items-center bg-pure-white rounded-2xl shadow-md p-7 lg:py-[50px] lg:px-[40px] h-full mx-auto gap-[25px]">
           <div className="flex justify-center mb-6">
             <LogoColor width={55} />
           </div>
 
-          <h3 className="text-[48px] font-gothic font-bold text-center">
+          <h3 className="text-3xl lg:text-5xl font-gothic font-bold text-center">
             SHiFT MasterSessions
           </h3>
           <div className="flex flex-col gap-[14px] items-center">
             <div className="flex items-center">
-              <p className="text-center text-[30px] font-bold font-gothic">
+              <p className="text-center text-2xl lg:text-[30px] font-bold font-gothic">
                 $49
               </p>
-              <span className="text-sm font-normal text-[22px] font-proxima mt-[12px]">
+              <span className="text-sm font-normal lg:text-[22px] font-proxima mt-[12px]">
                 /month, less than a single therapy session
               </span>
             </div>
@@ -70,9 +70,9 @@ const MasterSessions = () => {
             />
           </div>
           <div className="flex flex-col items-center gap-[14px]">
-            <p className="text-center text-[30px] font-bold font-gothic">
+            <p className="text-center text-2xl lg:text-[30px] font-bold font-gothic">
               $29
-              <span className="text-sm font-normal text-[22px] font-proxima mt-[12px]">
+              <span className="text-sm font-normal lg:text-[22px] font-proxima mt-[12px]">
                 /month, founders rate, for our beta
               </span>
             </p>

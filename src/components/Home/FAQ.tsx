@@ -57,12 +57,14 @@ const FAQ = () => {
   };
 
   return (
-    <section className="mb-[220px]">
-      <div className="max-w-7xl mx-auto flex flex-col gap-[80px]">
+    <section className="px-5 lg:px-32 xl:px-48 lg:pb-52">
+      <div className="flex flex-col gap-8 lg:gap-[80px]">
         {/* Header */}
         <div className="text-center flex flex-col gap-[20px]">
-          <h2 className="text-[48px] font-gothic font-bold text-black">FAQs</h2>
-          <p className="text-[24px] text-proxima text-neutral-750 w-[800px] mx-auto">
+          <h2 className="text-3xl lg:text-5xl font-gothic font-bold text-black">
+            FAQs
+          </h2>
+          <p className="lg:text-[24px] text-proxima text-neutral-750 max-w-[800px] mx-auto">
             Looking for details about our programs, pricing, or how SHIFT works?
             You&apos;ll find clear answers here.
           </p>
@@ -79,7 +81,7 @@ const FAQ = () => {
                 onClick={() => toggleFAQ(index)}
                 className="w-full  text-left flex items-center justify-between "
               >
-                <h3 className="text-gothic text-[28px] font-bold text-black">
+                <h3 className="text-gothic text-lg lg:text-[28px] font-bold text-black">
                   {faq.question}
                 </h3>
                 <div className="flex-shrink-0">
@@ -93,7 +95,7 @@ const FAQ = () => {
               </button>
 
               {openIndex === index && (
-                <p className="text-gray-750 font-proxima text-[24px]">
+                <p className="text-gray-750 font-proxima lg:text-[24px]">
                   {faq.answer}
                 </p>
               )}

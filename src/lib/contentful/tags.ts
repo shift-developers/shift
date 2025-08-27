@@ -7,7 +7,6 @@ export const getTags = async (): Promise<Tag[]> => {
       order: ["fields.name"],
     });
 
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const tags: Tag[] = entries.items.map((item: any) => ({
       name: item.fields.name,
       icon:

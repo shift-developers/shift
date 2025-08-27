@@ -14,7 +14,6 @@ export const getTestimonials = async (): Promise<Testimonial[]> => {
       order: ["fields.name"],
     });
 
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const testimonials: Testimonial[] = entries.items.map((item: any) => ({
       id: item.sys.id,
       quote: item.fields.testimonial,

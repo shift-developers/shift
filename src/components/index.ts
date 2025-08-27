@@ -1,5 +1,5 @@
 export { default as Wrapper } from "./Wrapper";
-export { default as Navbar } from "./Navbar";
+export { default as Navbar } from "./navbar";
 export { default as Footer } from "./Footer";
 // Common
 export { default as Banner } from "./common/Banner";

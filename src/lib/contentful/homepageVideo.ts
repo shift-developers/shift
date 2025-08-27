@@ -19,7 +19,6 @@ export const getHomepageVideo = async (): Promise<HomepageVideo | null> => {
       return null;
     }
 
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const item: any = entries.items[0];
 
     const homepageVideo: HomepageVideo = {

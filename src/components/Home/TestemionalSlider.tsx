@@ -21,7 +21,10 @@ const TestimonialSlider = ({ testimonials }: TestimonialSliderProps) => {
       spacing: 24,
     },
     breakpoints: {
-      "(min-width: 1024px)": {
+      "(min-width: 768px)": {
+        slides: { perView: 2, spacing: 24 },
+      },
+      "(min-width: 1301px)": {
         slides: { perView: 3, spacing: 24 },
       },
     },
@@ -51,19 +54,21 @@ const TestimonialSlider = ({ testimonials }: TestimonialSliderProps) => {
   };
 
   return (
-    <section className="max-w-7xl mx-auto mb-[150px]">
-      <div className="flex flex-col items-center justify-center text-center gap-[20px] mb-[100px]">
-        <h2 className="text-[48px] font-gothic font-bold">
-          What They Say About Our MasterSessions
+    <section className="px-5 lg:px-32 xl:px-48">
+      <div className="flex flex-col items-center justify-center text-center gap-[20px] lg:mb-[100px]">
+        <h2 className="text-3xl lg:text-5xl font-gothic font-bold">
+          What They Say About Our
+          <br />
+          MasterSessions
         </h2>
-        <p className="text-gray-750 text-[24px] font-proxima max-w-2xl mx-auto">
+        <p className="text-gray-750 lg:text-2xl font-proxima max-w-2xl mx-auto">
           Hear from our users who have transformed their lives with SHiFT&apos;s
           authentic and empowering MasterSessions.
         </p>
       </div>
 
-      <div className="relative mt-12 flex justify-center">
-        <div ref={sliderRef} className="keen-slider max-w-6xl h-full">
+      <div className="relative lg:mt-12 flex justify-center">
+        <div ref={sliderRef} className="keen-slider py-10">
           {testimonials.map((t, i) => (
             <div
               key={i}
@@ -89,13 +94,13 @@ const TestimonialSlider = ({ testimonials }: TestimonialSliderProps) => {
           <>
             <button
               onClick={prev}
-              className="absolute left-0 top-1/2 transform -translate-y-1/2  z-10"
+              className="absolute left-0 top-1/2 transform -translate-y-1/2 z-10 max-lg:hidden"
             >
               <ArrowLeft width={22} />
             </button>
             <button
               onClick={next}
-              className="absolute right-0 top-1/2 transform -translate-y-1/2  z-10"
+              className="absolute right-0 top-1/2 transform -translate-y-1/2 z-10 max-lg:hidden"
             >
               <ArrowRight width={22} />
             </button>

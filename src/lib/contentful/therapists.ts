@@ -8,7 +8,6 @@ export const getTherapists = async (): Promise<Therapist[]> => {
       "fields.showOnHomepage": true,
     });
 
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const therapists: Therapist[] = entries.items.map((item: any) => ({
       id: item.sys.id,
       name: item.fields.name,
@@ -16,7 +15,6 @@ export const getTherapists = async (): Promise<Therapist[]> => {
       image:
         item.fields.image?.fields?.file?.url?.replace(/^\/\//, "https://") ??
         "",
-      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       sessionTags: (item.fields.sessionTags ?? []).map((tag: any) => ({
         name: tag.fields?.name,
         icon: tag.fields?.icon?.fields?.file?.url

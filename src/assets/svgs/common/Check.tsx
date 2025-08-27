@@ -6,6 +6,7 @@ const SvgComponent = (props: SVGProps<SVGSVGElement>) => (
     width={28}
     height={28}
     fill="none"
+    viewBox="0 0 28 28"
     {...props}
   >
     <g clipPath="url(#a)">
