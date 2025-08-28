@@ -3,7 +3,7 @@ import Button from "../common/Button";
 
 const MasterSessions = () => {
   return (
-    <section className="px-5 lg:px-32 xl:px-48 my-14 lg:my-64">
+    <section className="my-container my-14 lg:my-64">
       <div className="grid lg:grid-cols-2 gap-[45px] items-center">
         <div className="w-full">
           <h2 className="text-3xl lg:text-5xl font-light leading-tight font-gothic">

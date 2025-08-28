@@ -4,8 +4,8 @@ type Props = {
 
 export const Clients = ({ clients }: Props) => (
   <section className="-mt-[200px] -z-[10]">
-    <div className="px-5 lg:px-32 xl:px-48 bg-gradient-to-b from-dark-blue to-light-blue text-white pt-[300px] pb-[100px] lg:pt-[300px] lg:pb-[250px] relative">
-      <div className="relative z-[1]">
+    <div className="bg-gradient-to-b from-dark-blue to-light-blue text-white pt-[300px] pb-[100px] lg:pt-[300px] lg:pb-[250px] relative">
+      <div className="my-container relative z-[1]">
         <h2 className="text-3xl lg:text-5xl font-gothic font-bold text-center mb-14 max-w-[740px] mx-auto">
           Shifting The Narrative: Real Stories About Mental Health
         </h2>
@@ -43,7 +43,7 @@ export const Clients = ({ clients }: Props) => (
       <img
         src="/images/banner-bottom-vector.png"
         alt="shift"
-        className="absolute bottom-0 left-0 right-0"
+        className="absolute bottom-0 left-0 right-0 w-full"
       />
     </div>
   </section>

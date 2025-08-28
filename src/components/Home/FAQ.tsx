@@ -57,7 +57,7 @@ const FAQ = () => {
   };
 
   return (
-    <section className="px-5 lg:px-32 xl:px-48 lg:pb-52">
+    <section className="my-container lg:pb-52">
       <div className="flex flex-col gap-8 lg:gap-[80px]">
         {/* Header */}
         <div className="text-center flex flex-col gap-[20px]">

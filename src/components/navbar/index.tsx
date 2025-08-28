@@ -37,16 +37,18 @@ export default function Navbar() {
         ref={headerRef}
         className="fixed top-0 left-0 w-full z-50 transition-all duration-300"
       >
-        <div className="px-5 md:px-10 xl:px-20 py-5 flex items-center justify-between">
-          <Link href="/">
-            <Logo className="size-14 md:size-20 lg:size-[100px]" />
-          </Link>
-          <MenuIcon
-            className="lg:hidden cursor-pointer"
-            onClick={() => setIsOpenMobileMenu((p) => !p)}
-          />
-          <div className="hidden lg:block">
-            <NavbarMenu />
+        <div className="my-container">
+          <div className="py-5 flex items-center justify-between">
+            <Link href="/">
+              <Logo className="size-14 md:size-16 xl:size-[100px]" />
+            </Link>
+            <MenuIcon
+              className="lg:hidden cursor-pointer"
+              onClick={() => setIsOpenMobileMenu((p) => !p)}
+            />
+            <div className="hidden lg:block">
+              <NavbarMenu />
+            </div>
           </div>
         </div>
       </header>

@@ -40,48 +40,50 @@ const WhoWeArePage = ({ therapists }: Props) => (
     />
 
     <section className="-mt-[200px] -z-[10]">
-      <div className="px-5 lg:px-32 xl:px-48 bg-gradient-to-b from-dark-blue to-light-blue text-white pt-[300px] pb-[200px] lg:py-[300px] relative">
-        <div className="flex flex-col gap-5 mb-7 lg:mb-14">
-          <h2 className="text-3xl lg:text-5xl font-gothic font-bold">
-            Our Commitment to Mental Health
-          </h2>
-          <p className="text-base lg:text-2xl font-proxima">
-            Empowering Individuals and Communities Through{" "}
-            <br className="hidden lg:block" /> Accessible Mental Health
-            Education and Meaningful Support
-          </p>
-        </div>
+      <div className="bg-gradient-to-b from-dark-blue to-light-blue text-white pt-[300px] pb-[200px] lg:py-[300px] relative">
+        <div className="my-container">
+          <div className="flex flex-col gap-5 mb-7 lg:mb-14">
+            <h2 className="text-3xl lg:text-5xl font-gothic font-bold">
+              Our Commitment to Mental Health
+            </h2>
+            <p className="text-base lg:text-2xl font-proxima">
+              Empowering Individuals and Communities Through{" "}
+              <br className="hidden lg:block" /> Accessible Mental Health
+              Education and Meaningful Support
+            </p>
+          </div>
 
-        <div className="grid xl:grid-cols-3 gap-4 lg:gap-7">
-          {cards.map((card) => (
-            <div
-              key={card.id}
-              className="flex flex-col gap-3 lg:gap-5 p-5 2xl:p-7 bg-white/5 border border-white/20 rounded-[20px] hover:shadow-xl transition-all duration-300"
-            >
-              <div className="flex items-center gap-1.5 lg:gap-5">
-                <card.icon className="size-9 lg:size-14 2xl:size-[62px]" />
-                <h3 className="text-lg 2xl:text-[22px] font-gothic font-bold flex-1">
-                  {card.title}
-                </h3>
+          <div className="grid xl:grid-cols-3 gap-4 lg:gap-7">
+            {cards.map((card) => (
+              <div
+                key={card.id}
+                className="flex flex-col gap-3 lg:gap-5 p-5 2xl:p-7 bg-white/5 border border-white/20 rounded-[20px] hover:shadow-xl transition-all duration-300"
+              >
+                <div className="flex items-center gap-1.5 lg:gap-5">
+                  <card.icon className="size-9 lg:size-14 2xl:size-[62px]" />
+                  <h3 className="text-lg 2xl:text-[22px] font-gothic font-bold flex-1">
+                    {card.title}
+                  </h3>
+                </div>
+                <p className="text-base lg:text-xl font-proxima">
+                  {card.description}
+                </p>
               </div>
-              <p className="text-base lg:text-xl font-proxima">
-                {card.description}
-              </p>
-            </div>
-          ))}
-        </div>
-        <div className="flex justify-center mt-10">
-          <Button type="primary" text="Begin Journey" />
+            ))}
+          </div>
+          <div className="flex justify-center mt-10 mb-0 2xl:mb-40">
+            <Button type="primary" text="Begin Journey" />
+          </div>
         </div>
 
         <img
           src="/images/blue-vector.png"
           alt="shift"
-          className="absolute -bottom-10 lg:-bottom-[200px] left-0 right-0"
+          className="absolute -bottom-10 lg:-bottom-[200px] left-0 right-0 w-full"
         />
       </div>
     </section>
-    <section className="px-5 lg:px-32 xl:px-48 mt-20 lg:mt-[200px]">
+    <section className="my-container mt-20 lg:mt-[200px]">
       <h2 className="text-4xl lg:text-5xl font-gothic font-bold text-center mb-10 lg:mb-20">
         The Team Ushering in a New Era of Mental Health
       </h2>

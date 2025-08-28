@@ -9,12 +9,15 @@ interface BannerProps {
 const Banner = ({ header, description, buttons }: BannerProps) => {
   return (
     <section
-      className="relative bg-cover bg-no-repeat pt-32 lg:pt-48 xl:pt-56 px-5 lg:px-32 xl:px-48 pb-28 lg:pb-72 z-[1]"
+      className="relative pt-32 lg:pt-48 xl:pt-56 pb-28 lg:pb-72 z-[10]"
       style={{
         backgroundImage: "url('/images/background-1.png')",
+        backgroundSize: "cover",
+        backgroundPosition: "bottom",
+        backgroundRepeat: "no-repeat",
       }}
     >
-      <div className="flex flex-col gap-5 lg:gap-10">
+      <div className="my-container flex flex-col gap-5 lg:gap-10">
         <h1 className="text-4xl lg:text-7xl 2xl:text-8xl text-pure-white font-bold font-gothic leading-[110%]">
           {header}
         </h1>

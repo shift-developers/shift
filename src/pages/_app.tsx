@@ -12,7 +12,7 @@ const inter = Inter({
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <div className={`${inter.variable} max-w-[1920px] mx-auto`}>
+    <div className={`${inter.variable}`}>
       <DefaultSeo {...defaultSEOConfig} />
       <Navbar />
       <Wrapper>

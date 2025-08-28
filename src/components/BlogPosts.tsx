@@ -4,7 +4,7 @@ type Props = {
 
 export const BlogPosts = ({ blogPosts }: Props) => {
   return (
-    <section className="px-5 lg:px-32 xl:px-48 mt-20 lg:mt-[200px] lg:mb-[100px]">
+    <section className="my-container mt-20 lg:mt-[200px] lg:mb-[100px]">
       <h2 className="text-3xl lg:text-5xl font-gothic font-bold text-center mb-14">
         SHiFT Blog
       </h2>

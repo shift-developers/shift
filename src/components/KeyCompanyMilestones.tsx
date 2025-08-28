@@ -36,7 +36,7 @@ const cards = [
 
 export const KeyCompanyMilestones = () => {
   return (
-    <section className="px-5 lg:px-32 xl:px-48 flex flex-col gap-9 lg:gap-20">
+    <section className="my-container flex flex-col gap-9 lg:gap-20">
       <div className="flex flex-col gap-5 text-center">
         <h2 className="text-3xl lg:text-5xl font-gothic font-bold">
           Key Company Milestones

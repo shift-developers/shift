@@ -17,32 +17,33 @@ const WhatWeDoPage = ({ therapists }: Props) => (
 
     <section className="-mt-[200px] -z-[10]">
       <div
-        className="px-5 lg:px-32 xl:px-48 relative h-[750px] lg:h-[880px] py-[200px] flex items-center lg:justify-end"
+        className="relative h-[750px] lg:h-[880px] py-[200px]"
         style={{
           backgroundImage: `url(/images/what-we-do-banner.png)`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
       >
-        <div className="flex flex-col gap-5 lg:text-2xl font-proxima font-bold text-white max-w-[500px] z-[1]">
-          <p>
-            We go beyond mere content delivery, to offer a personalized
-            actionable roadmap for real mental health progress.
-          </p>
-          <p>
-            In the rapidly growing online education and personal growth
-            industry, SHiFT uniquely bridges the gap with a
-            scientifically-backed,data-driven approach, distinguishing us from
-            other health and wellness products.
-          </p>
+        <div className="my-container flex items-center lg:justify-end h-full">
+          <div className="flex flex-col gap-5 lg:text-2xl font-proxima font-bold text-white max-w-[500px] z-[1] -mt-20">
+            <p>
+              We go beyond mere content delivery, to offer a personalized
+              actionable roadmap for real mental health progress.
+            </p>
+            <p>
+              In the rapidly growing online education and personal growth
+              industry, SHiFT uniquely bridges the gap with a
+              scientifically-backed,data-driven approach, distinguishing us from
+              other health and wellness products.
+            </p>
+          </div>
         </div>
-
         <div className="absolute top-0 left-0 w-full h-full bg-dark-blue/50" />
 
         <img
           src="/images/blue-vector.png"
           alt="shift"
-          className="absolute -bottom-10 lg:-bottom-[200px] left-0 right-0"
+          className="absolute -bottom-10 lg:-bottom-[200px] left-0 right-0 w-full"
         />
       </div>
     </section>

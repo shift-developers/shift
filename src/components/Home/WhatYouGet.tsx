@@ -56,7 +56,7 @@ const items = [
 
 const WhatYouGet = () => {
   return (
-    <section className="px-5 lg:px-32 xl:px-48">
+    <section className="my-container">
       <h2 className="text-5xl text-black font-gothic mb-8 font-bold">
         What you get
       </h2>

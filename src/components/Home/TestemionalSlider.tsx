@@ -54,7 +54,7 @@ const TestimonialSlider = ({ testimonials }: TestimonialSliderProps) => {
   };
 
   return (
-    <section className="px-5 lg:px-32 xl:px-48">
+    <section className="my-container">
       <div className="flex flex-col items-center justify-center text-center gap-[20px] lg:mb-[100px]">
         <h2 className="text-3xl lg:text-5xl font-gothic font-bold">
           What They Say About Our

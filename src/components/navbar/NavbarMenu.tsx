@@ -41,8 +41,8 @@ type Props = {
 };
 
 export const NavbarMenu = ({ onClose }: Props) => (
-  <div className="max-lg:flex-col flex lg:items-center gap-16 xl:gap-24 max-lg:justify-between max-lg:flex-1">
-    <nav className="text-white font-bold text-xl font-proxima flex max-lg:flex-col lg:items-center gap-7">
+  <div className="max-lg:flex-col flex lg:items-center gap-10 xl:gap-24 max-lg:justify-between max-lg:flex-1">
+    <nav className="text-white font-bold xl:text-xl font-proxima flex max-lg:flex-col lg:items-center gap-7">
       {navLinks.map((link) => (
         <Link
           key={link.name}

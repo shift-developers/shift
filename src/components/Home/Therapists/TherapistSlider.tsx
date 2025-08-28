@@ -12,10 +12,13 @@ const TherapistSlider = ({ therapists, tags }: Props) => {
 
   const [sliderRef] = useKeenSlider<HTMLDivElement>({
     slides: {
-      perView: 5.5,
+      perView: 9.5,
       spacing: 16,
     },
     breakpoints: {
+      "(max-width: 1921px)": {
+        slides: { perView: 5.5 },
+      },
       "(max-width: 1440px)": {
         slides: { perView: 4.5 },
       },
@@ -87,35 +90,37 @@ const TherapistSlider = ({ therapists, tags }: Props) => {
         </div>
       </div>
 
-      <div className="relative w-full pl-5 lg:pl-32 xl:pl-48 max-lg:mt-8">
-        {/* Scrollable wrapper with scrollbar */}
-        <div>
-          <div
-            key={activeTag}
-            ref={sliderRef}
-            className="keen-slider flex gap-4"
-          >
-            {filtered.map((t) => (
-              <div key={t.id} className="keen-slider__slide">
-                <div className="relative rounded-lg overflow-hidden shadow-md">
-                  <img
-                    src={
-                      t.image.startsWith("//") ? `https:${t.image}` : t.image
-                    }
-                    alt={t.name}
-                    className="object-cover"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex flex-col items-center justify-end p-5 text-center text-white gap-3">
-                    <h3 className="text-2xl 2xl:text-4xl font-extrabold font-proxima leading-[120%]">
-                      {t.masterSessionName}
-                    </h3>
-                    <p className="text-sm lg:text-[18px] font-proxima">
-                      {t.name}
-                    </p>
+      <div className="my-container !ml-auto !mr-0 !pr-0">
+        <div className="relative w-full max-lg:mt-8">
+          {/* Scrollable wrapper with scrollbar */}
+          <div>
+            <div
+              key={activeTag}
+              ref={sliderRef}
+              className="keen-slider flex gap-4"
+            >
+              {[...filtered, ...filtered].map((t) => (
+                <div key={t.id} className="keen-slider__slide">
+                  <div className="relative rounded-lg overflow-hidden shadow-md">
+                    <img
+                      src={
+                        t.image.startsWith("//") ? `https:${t.image}` : t.image
+                      }
+                      alt={t.name}
+                      className="object-cover"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex flex-col items-center justify-end p-5 text-center text-white gap-3">
+                      <h3 className="text-2xl 2xl:text-3xl font-extrabold font-proxima leading-[120%] break-words w-full">
+                        {t.masterSessionName}
+                      </h3>
+                      <p className="text-sm lg:text-[18px] font-proxima">
+                        {t.name}
+                      </p>
+                    </div>
                   </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
 
