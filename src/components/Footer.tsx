@@ -49,7 +49,6 @@ export default function Footer() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
-    // Clear previous messages
     setMessage("");
     setIsError(false);
 
@@ -69,16 +68,27 @@ export default function Footer() {
     setIsSubmitting(true);
 
     try {
-      // Here you would normally send the email to your backend/newsletter service
-      // For now, we'll simulate an API call
-      await new Promise((resolve) => setTimeout(resolve, 1000));
+      const response = await fetch("/api/newsletter", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ email }),
+      });
 
-      // Simulate success
+      const data = await response.json();
+
+      if (!response.ok) {
+        setMessage(data.message || "Something went wrong. Please try again.");
+        setIsError(true);
+        return;
+      }
+
       setMessage("Thank you! You've been subscribed to our newsletter.");
       setIsError(false);
-      setEmail(""); // Clear the input
+      setEmail("");
     } catch (error) {
-      console.error(error);
+      console.error("Newsletter subscription error:", error);
       setMessage("Something went wrong. Please try again.");
       setIsError(true);
     } finally {
