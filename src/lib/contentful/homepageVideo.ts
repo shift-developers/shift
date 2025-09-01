@@ -13,8 +13,6 @@ export const getHomepageVideo = async (): Promise<HomepageVideo | null> => {
       limit: 1,
     });
 
-    console.log(entries);
-
     if (entries.items.length === 0) {
       return null;
     }
