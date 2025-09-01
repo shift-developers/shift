@@ -19,3 +19,21 @@ body {
 .my-container {
   @apply max-w-[1920px] mx-auto px-5 lg:px-24 2xl:px-40;
 }
+
+@media screen and (min-width: 1536px) and (max-width: 1920px) {
+  .custom-padding {
+    @apply !pl-40;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1535px) {
+  .custom-padding {
+    @apply !pl-24;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .custom-padding {
+    @apply !pl-5;
+  }
+}

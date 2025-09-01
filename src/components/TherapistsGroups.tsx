@@ -5,29 +5,24 @@ type Props = {
 };
 
 export const TherapistsGroups = ({ therapists }: Props) => {
-  const groupedTherapists = useMemo(() => {
-    const groups: Record<string, Therapist[]> = {};
-
-    therapists.forEach((therapist) => {
-      therapist.sessionTags.forEach((tag) => {
-        if (!groups[tag.name]) {
-          groups[tag.name] = [];
-        }
-        groups[tag.name].push(therapist);
-      });
-    });
-
-    return groups;
+  const groupBySessionNumber = useMemo(() => {
+    return therapists.reduce((acc: Record<number, Therapist[]>, therapist) => {
+      acc[therapist.sessionNumber] = [
+        ...(acc[therapist.sessionNumber] || []),
+        therapist,
+      ];
+      return acc;
+    }, {});
   }, [therapists]);
 
   return (
     <section className="my-20 lg:my-[200px] px-5">
       <div className="max-w-7xl mx-auto flex flex-col items-center gap-14 lg:gap-32">
-        {Object.entries(groupedTherapists).map(
-          ([tagName, therapistsInGroup]) => (
-            <div key={tagName} className="flex flex-col items-center w-full">
+        {Object.entries(groupBySessionNumber).map(
+          ([sessionNum, therapistsInGroup]) => (
+            <div key={sessionNum} className="flex flex-col items-center w-full">
               <h2 className="text-3xl lg:text-5xl font-gothic font-bold text-center lg:w-1/2 mb-14">
-                {tagName}
+                Meet Your MasterSession™ Season {sessionNum} Therapists
               </h2>
 
               <div className="flex flex-wrap justify-center gap-20">
@@ -49,7 +44,7 @@ export const TherapistsGroups = ({ therapists }: Props) => {
                         {therapist.name}
                       </h4>
                       <p className="text-gray-600 text-xl font-proximanova">
-                        {therapist.masterSessionName}
+                        {therapist.specialization}
                       </p>
                     </div>
                   </div>

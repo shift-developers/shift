@@ -7,7 +7,6 @@ import {
   getHomepageVideo,
   getTestimonials,
   getTherapists,
-  getTags,
 } from "@/lib/contentful";
 import {
   Banner,
@@ -23,12 +22,11 @@ import {
 
 interface HomeProps {
   therapists: Therapist[];
-  tags: Tag[];
   testimonials: Testimonial[];
   homepageVideo: HomepageVideo | null;
 }
 
-const Home = ({ therapists, tags, testimonials, homepageVideo }: HomeProps) => (
+const Home = ({ therapists, testimonials, homepageVideo }: HomeProps) => (
   <div className="w-full">
     <Banner
       header="A New Era of Mental Health. A Movement of Healing - Together."
@@ -56,10 +54,14 @@ const Home = ({ therapists, tags, testimonials, homepageVideo }: HomeProps) => (
         />
       )}
     </div>
-    <TherapistsSection therapists={therapists} tags={tags} />
+    <TherapistsSection therapists={therapists} />
     <div>
       <section className="relative lg:mt-14">
-        <img src="/images/abstract.png" alt="abstract" className="w-full h-[1100px]" />
+        <img
+          src="/images/abstract.png"
+          alt="abstract"
+          className="w-full h-[1100px]"
+        />
         <div className="absolute inset-0 z-10 flex">
           <div className="my-container flex-1 flex items-center justify-center">
             <div className="flex max-lg:flex-col lg:justify-between gap-10">
@@ -89,7 +91,6 @@ const Home = ({ therapists, tags, testimonials, homepageVideo }: HomeProps) => (
 );
 
 export const getStaticProps: GetStaticProps = async () => {
-  const tags = await getTags();
   const therapists = await getTherapists();
   const testimonials = await getTestimonials();
   const homepageVideo = await getHomepageVideo();
@@ -97,7 +98,6 @@ export const getStaticProps: GetStaticProps = async () => {
   return {
     props: {
       therapists,
-      tags,
       testimonials,
       homepageVideo,
     },

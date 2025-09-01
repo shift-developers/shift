@@ -1,14 +1,10 @@
 interface Therapist {
   id: string;
   name: string;
-  masterSessionName: string;
+  specialization: string;
   image: string;
-  sessionTags: Tag[];
-}
-
-interface Tag {
-  name: string;
-  icon: string | null;
+  sessionNumber: number;
+  order: number;
 }
 
 interface BlogPost {
@@ -25,5 +21,12 @@ interface Client {
   fullName: string;
   jobTitle: string;
   description: string;
+  image: string;
+}
+
+interface TeamMember {
+  id: string;
+  fullName: string;
+  jobTitle: string;
   image: string;
 }

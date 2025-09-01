@@ -1,8 +1,8 @@
 import { GetStaticProps } from "next";
 
 import { CircleCheck, MetnalPractice, VideoPlay } from "@/assets/svgs";
-import { getTherapists } from "@/lib/contentful";
 import { Banner, Button } from "@/components";
+import { getTeam } from "@/lib/contentful/team";
 
 const cards = [
   {
@@ -29,10 +29,10 @@ const cards = [
 ];
 
 type Props = {
-  therapists: Therapist[];
+  team: TeamMember[];
 };
 
-const WhoWeArePage = ({ therapists }: Props) => (
+const WhoWeArePage = ({ team }: Props) => (
   <div className="w-full bg-white">
     <Banner
       header="Who We Are"
@@ -88,25 +88,25 @@ const WhoWeArePage = ({ therapists }: Props) => (
         The Team Ushering in a New Era of Mental Health
       </h2>
       <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-5">
-        {therapists.map((therapist) => (
+        {team.map((item) => (
           <div
-            key={therapist.id}
+            key={item.id}
             className="flex flex-col gap-5 p-8 items-center justify-center bg-white rounded-[20px] shadow-xl hover:shadow-2xl transition-all duration-300"
           >
             <div
               className="size-36 lg:size-[189px] rounded-full"
               style={{
-                backgroundImage: `url(${therapist.image})`,
+                backgroundImage: `url(${item.image})`,
                 backgroundSize: "cover",
                 backgroundPosition: "top",
               }}
             />
             <div className="flex flex-col gap-2 text-center">
               <h3 className="text-xl lg:text-2xl text-blue-500 font-gothic font-bold">
-                {therapist.name}
+                {item.fullName}
               </h3>
-              <p className="text-sm lg:text-xl font-proxima text-neutral-500">
-                {therapist.masterSessionName}
+              <p className="text-sm lg:text-xl font-proxima text-neutral-500 font-bold">
+                {item.jobTitle}
               </p>
             </div>
           </div>
@@ -117,11 +117,11 @@ const WhoWeArePage = ({ therapists }: Props) => (
 );
 
 export const getStaticProps: GetStaticProps = async () => {
-  const therapists = await getTherapists();
+  const team = await getTeam();
 
   return {
     props: {
-      therapists,
+      team,
     },
     revalidate: 60,
   };
