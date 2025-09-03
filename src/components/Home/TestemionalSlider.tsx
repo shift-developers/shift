@@ -80,7 +80,7 @@ const TestimonialSlider = ({ testimonials }: TestimonialSliderProps) => {
             >
               <Quote className="text-[#006FFF] mb-4 mx-auto" width={78} />
               <p className="text-sm text-gray-700 leading-relaxed mb-4">
-                &ldquo;{t.quote}&rdquo;
+                {t.quote.replace(/"/g, "")}
               </p>
               <div className="mt-auto">
                 <p className="text-sm font-bold text-[#001b52]">{t.name}</p>

@@ -15,11 +15,11 @@ const ShiftIntro = () => (
             deliver raw, honest, deeply human stories and lessons presented by
             therapists who&apos;ve turned their own pain into purpose. This
             isn&apos;t just clinical theory. It&apos;s lived wisdom designed to
-            help you grow, heal, and transform.
+            help you heal, grow, and transform.
             <br />
             <span className="mt-5">
               Whether you&apos;re seeking to heal, grow, or simply feel less
-              alone—SHiFT meets you where you are.
+              alone - SHiFT meets you where you are.
             </span>
           </p>
           <div className="flex gap-5 w-full">
@@ -30,13 +30,18 @@ const ShiftIntro = () => (
               className="text-sm lg:text-[18px] lg:w-[220px] max-lg:p-3"
               color="blue"
             />
-            <Button
-              text="Watch a Free Preview"
-              href="/"
-              type="secondary"
-              className="text-sm lg:text-[18px] lg:w-[250px] max-lg:p-3"
-              color="blue"
-            />
+            <a
+              href="https://youtu.be/5t-wXWXMEw0?feature=shared"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button
+                text="Watch a Free Preview"
+                type="secondary"
+                className="text-sm lg:text-[18px] lg:w-[250px] max-lg:p-3"
+                color="blue"
+              />
+            </a>
           </div>
         </div>
         <Image

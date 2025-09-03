@@ -1,7 +1,7 @@
 import Button from "./Button";
 
 interface BannerProps {
-  header: string;
+  header: React.ReactNode;
   description: string;
   buttons?: { type: "primary" | "secondary"; text: string; href: string }[];
 }

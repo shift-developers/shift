@@ -11,13 +11,6 @@ import {
 
 const items = [
   {
-    title: "The Vault",
-    subtitle: "On-Demand, Anytime",
-    description:
-      "Unlock immediate access to our exclusive library of recorded MasterSessions, guided support circles, and transformational tools. This is your personal growth hub - available anytime, anywhere, the moment you're ready to shift your life.",
-    icon: <Vault className="size-10 lg:size-14" />,
-  },
-  {
     title: "The Main Event",
     subtitle: "Live MasterSessions",
     description:
@@ -26,9 +19,9 @@ const items = [
   },
   {
     title: "SHiFT Sanctuary",
-    subtitle: "Your Private Community",
+    subtitle: "Speak and Be Seen",
     description:
-      "More than a community, this is your sacred space. Here, you'll find real talk, deep connection, and the unwavering support of people who've been there. This is where courage meets belonging, and you remember—you're never alone.",
+      "This is a space for real connection and real progress. In the SHiFT Sanctuary, you’re free to be honest about where you are and what you need. It’s a space built on respect, safety, and shared commitment to personal growth. Here, your voice matters, your growth is recognized, and your presence contributes to something meaningful. No performance. No pretending. Just people doing the work, together.",
     icon: <UsersFlower className="size-10 lg:size-14" />,
   },
   {
@@ -40,17 +33,24 @@ const items = [
   },
   {
     title: "The Practice",
-    subtitle: "Weekly Prompts and Monthly Challenges",
+    subtitle: "Daily Prompts. Weekly Challenges.",
     description:
-      "We don't just talk about change - we live it. Each week and month, we deliver the challenges and practices designed to build the habits you need to fuel transformation. Consistency creates community and growth becomes your way of life.",
+      "This is where growth gets real—and doable. Every day, you’ll get quick questions and polls to spark insight. Each week, a challenge to stretch your habits. And every month, a theme to help you focus on what matters most. It’s all designed to build emotional strength, deepen self-awareness, and keep you moving forward—one small shift at a time.",
     icon: <GearLightbulb className="size-10 lg:size-14" />,
   },
   {
     title: "The Founders Circle",
-    subtitle: "Monthly with The Team",
+    subtitle: "Your Welcome Party",
     description:
-      "This is your behind-the-scenes pass to the spirit of SHiFT. Sit shoulder to shoulder with the founders, hear the intention behind what's shared, and get your burning questions answered.",
+      "Imagine walking into the coolest gathering - you're greeted at the door, introduced to a few great people, and given the inside scoop on where things are happening. That’s what The Founders Circle is. A live monthly gathering where you’ll be welcomed by the SHiFT hosts and some of our Inner Circle - longtime members who know the space, love the mission, and are here to make sure you feel right at home.",
     icon: <UserLigthbulb className="size-10 lg:size-14" />,
+  },
+  {
+    title: "SHiFT Retreats",
+    subtitle: "Retreats and Camps",
+    description:
+      "This is where the magic gets real. Our immersive, in-person retreats and camps are the culmination of your Best Year Ever. You'll laugh, cry, grow, and connect in ways that will shift your life forever. This is not a break from the work - it's the embodiment of it.",
+    icon: <SuitcaseFlower className="size-10 lg:size-14" />,
   },
 ];
 
@@ -63,20 +63,19 @@ const WhatYouGet = () => {
       <div className="flex flex-col lg:flex-row gap-3">
         <div className="flex flex-col bg-pure-white rounded-xl shadow-sm p-5 lg:p-6 border border-gray-200 hover:shadow-md transition gap-3 w-full lg:w-1/3 2xl:w-1/4">
           <div>
-            <SuitcaseFlower className="size-10 lg:size-14" />
+            <Vault className="size-10 lg:size-14" />
           </div>
           <h3 className="font-bold text-xl lg:text-[32px] font-proxima">
-            SHiFT IRL
+            The Vault
           </h3>
           <p className="lg:text-[18px] text-dark-blue font-proxima font-semibold">
-            Retreats and Camps
+            On-Demand, Anytime
           </p>
           <p className="text-sm lg:text-base font-proxima text-neutral-750">
-            This is where the magic gets real. Our immersive, in-person retreats
-            and camps are the culmination of your Best Year Ever. You&apos;ll
-            laugh, cry, grow, and connect in ways that will shift your life
-            forever. This is not a break from the work - it&apos;s the
-            embodiment of it.
+            {`Unlock immediate access to our exclusive library of recorded
+            MasterSessions, guided support circles, and transformational tools.
+            This is your personal growth hub - available anytime, anywhere, the
+            moment you're ready to shift your life.`}
           </p>
           <div className="flex items-center justify-center flex-1">
             <LogoColor className="w-[61px] lg:w-[100px]" />

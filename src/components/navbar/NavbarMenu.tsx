@@ -7,31 +7,30 @@ import {
 import Link from "next/link";
 
 const navLinks = [
-  { name: "Who We Are", href: "/who-we-are" },
+  { name: "What We Are", href: "/what-we-are" },
   { name: "What We Do", href: "/what-we-do" },
   { name: "For Investors", href: "/investment" },
-  { name: "Media", href: "/media" },
 ];
 
 const socialLinks = [
   {
     name: "Facebook",
-    href: "#",
+    href: "https://www.facebook.com/shiftmastersessions",
     icon: <FacebookSVG />,
   },
   {
     name: "Instagram",
-    href: "#",
+    href: "https://www.instagram.com/shift_mastersessions/",
     icon: <InstagramSVG />,
   },
   {
     name: "LinkedIn",
-    href: "#",
+    href: "https://www.linkedin.com/company/shift-mastersessions/posts/?feedView=all",
     icon: <LinkedInSVG />,
   },
   {
     name: "YouTube",
-    href: "#",
+    href: "https://www.youtube.com/@theshiftmastersessions",
     icon: <YoutubeSVG />,
   },
 ];
@@ -62,6 +61,8 @@ export const NavbarMenu = ({ onClose }: Props) => (
           href={social.href}
           aria-label={social.name}
           className="text-white hover:opacity-80"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           {social.icon}
         </a>

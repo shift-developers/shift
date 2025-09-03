@@ -20,16 +20,36 @@ const footerSections = [
   {
     title: "SHIFT",
     links: [
-      { label: "Who We Are", href: "/who-we-are" },
+      { label: "What We Are", href: "/what-we-are" },
       { label: "What We Do", href: "/what-we-do" },
     ],
   },
   {
     title: "Get Involved",
-    links: [
-      { label: "For Investors", href: "/investment" },
-      { label: "Media", href: "/media" },
-    ],
+    links: [{ label: "For Investors", href: "/investment" }],
+  },
+];
+
+const socialLinks = [
+  {
+    name: "Facebook",
+    href: "https://www.facebook.com/shiftmastersessions",
+    icon: FacebookSVG,
+  },
+  {
+    name: "Instagram",
+    href: "https://www.instagram.com/shift_mastersessions/",
+    icon: InstagramSVG,
+  },
+  {
+    name: "LinkedIn",
+    href: "https://www.linkedin.com/company/shift-mastersessions/posts/?feedView=all",
+    icon: LinkedInSVG,
+  },
+  {
+    name: "YouTube",
+    href: "https://www.youtube.com/@theshiftmastersessions",
+    icon: YoutubeSVG,
   },
 ];
 
@@ -114,7 +134,7 @@ export default function Footer() {
                   </div>
                   <p className="md:text-xl font-proxima font-bold leading-relaxed text-pure-white">
                     Keep up to date with new releases, live events, giveaways
-                    and in-person events with our monthly SHIFT news update.
+                    and in-person events with our SHiFT news update.
                   </p>
                   <form onSubmit={handleSubmit} className="my-4">
                     <div className="flex items-center gap-0 relative">
@@ -179,10 +199,18 @@ export default function Footer() {
                 </div>
               </div>
               <div className="flex items-center gap-5 2xl:mt-[132px]">
-                <FacebookSVG className="cursor-pointer hover:scale-110 transition-all duration-300" />
-                <InstagramSVG className="cursor-pointer hover:scale-110 transition-all duration-300" />
-                <LinkedInSVG className="cursor-pointer hover:scale-110 transition-all duration-300" />
-                <YoutubeSVG className="cursor-pointer hover:scale-110 transition-all duration-300" />
+                {socialLinks.map((social) => (
+                  <a
+                    key={social.name}
+                    href={social.href}
+                    aria-label={social.name}
+                    className="text-white hover:opacity-80"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <social.icon className="cursor-pointer hover:scale-110 transition-all duration-300" />
+                  </a>
+                ))}
               </div>
             </div>
           </div>

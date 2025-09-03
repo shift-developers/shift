@@ -29,11 +29,16 @@ interface HomeProps {
 const Home = ({ therapists, testimonials, homepageVideo }: HomeProps) => (
   <div className="w-full">
     <Banner
-      header="A New Era of Mental Health. A Movement of Healing - Together."
-      description="Therapists who have navigated life's challenges use their experience to guide and support your healing and transformation."
+      header={
+        <>
+          A New Era of Mental Health. A Movement of Healing -{" "}
+          <span className="italic">Together.</span>
+        </>
+      }
+      description="Therapists who have navigated life's challenges use their lived experience to guide and support your healing and transformation."
       buttons={[
-        { type: "primary", text: "Begin Journey", href: "#" },
-        { type: "secondary", text: "Free Trial", href: "#" },
+        { type: "primary", text: "Coming Soon", href: "#" },
+        { type: "secondary", text: "Join Waitlist", href: "#" },
       ]}
     />
     <ShiftIntro />

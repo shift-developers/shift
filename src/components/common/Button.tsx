@@ -30,10 +30,14 @@ const Button = ({
 
   const styles = type === "primary" ? fillColor : outlineColor;
 
-  return (
+  if (href) {
     <Link href={href ?? ""} className={`${baseStyles} ${styles} ${className}`}>
       {text}
-    </Link>
+    </Link>;
+  }
+
+  return (
+    <button className={`${baseStyles} ${styles} ${className}`}>{text}</button>
   );
 };
 

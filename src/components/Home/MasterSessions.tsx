@@ -64,7 +64,7 @@ const MasterSessions = () => {
             <Button
               type="primary"
               color="blue"
-              text="Begin Journey"
+              text="Coming Soon"
               href="/"
               className="w-[270px]"
             />

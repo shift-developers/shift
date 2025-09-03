@@ -30,7 +30,7 @@ const cards = [
     id: 5,
     icon: Rocket,
     title: "Beta Launch",
-    date: "February 2025",
+    date: "October 2025",
   },
 ];
 
