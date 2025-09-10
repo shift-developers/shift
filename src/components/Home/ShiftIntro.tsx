@@ -23,13 +23,13 @@ const ShiftIntro = () => (
             </span>
           </p>
           <div className="flex gap-5 w-full">
-            <Button
+            {/* <Button
               text="Join the Beta"
               href="/"
               type="primary"
               className="text-sm lg:text-[18px] lg:w-[220px] max-lg:p-3"
               color="blue"
-            />
+            /> */}
             <a
               href="https://youtu.be/5t-wXWXMEw0?feature=shared"
               target="_blank"

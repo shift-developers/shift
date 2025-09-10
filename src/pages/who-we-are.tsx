@@ -35,7 +35,7 @@ type Props = {
 const WhoWeArePage = ({ team }: Props) => (
   <div className="w-full bg-white">
     <Banner
-      header="What We Are"
+      header="Who We Are"
       description="The mental health field has long lacked diversity. Both people of color and LGBTQ+ communities face unique challenges, and it’s crucial to have diverse voices guiding their healing and growth. SHiFT brings therapists from all backgrounds, so that everyone feels seen, heard, and understood."
     />
 

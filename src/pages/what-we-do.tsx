@@ -11,7 +11,7 @@ type Props = {
 const WhatWeDoPage = ({ therapists }: Props) => (
   <div className="w-full">
     <Banner
-      header="Who We Do"
+      header="What We Do"
       description="SHiFT: a product that helps people unlock their potential, and a platform where therapists share their stories."
     />
 
