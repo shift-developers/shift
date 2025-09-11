@@ -10,7 +10,7 @@ export const OurPartners = ({ partners }: Props) => {
       </h2>
       <div className="flex items-center gap-10 justify-between overflow-y-auto">
         {partners.map((el, i) => (
-          <img key={i} src={el} alt="shift" />
+          <img key={i} src={el} alt="shift" className="w-28" />
         ))}
       </div>
     </section>

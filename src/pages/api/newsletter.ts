@@ -88,14 +88,12 @@ export default async function handler(
       console.error("Kit API Error Status:", kitResponse.status);
       console.error("Kit API Error Headers:", kitResponse.headers);
 
-      let errorData;
       const responseText = await kitResponse.text();
       console.error("Kit API Error Response:", responseText);
 
       try {
-        errorData = JSON.parse(responseText);
       } catch (parseError) {
-        console.error("Failed to parse Kit API error response as JSON");
+        console.error("Failed to parse Kit API error response as JSON", parseError);
         return res.status(500).json({
           message: "Kit API returned an unexpected response format",
         });

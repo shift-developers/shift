@@ -10,6 +10,7 @@ const navLinks = [
   { name: "Who We Are", href: "/who-we-are" },
   { name: "What We Do", href: "/what-we-do" },
   { name: "For Investors", href: "/investment" },
+  { name: "Contact Us", href: "/contact-us" },
 ];
 
 const socialLinks = [

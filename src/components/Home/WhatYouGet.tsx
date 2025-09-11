@@ -14,42 +14,42 @@ const items = [
     title: "The Main Event",
     subtitle: "Live MasterSessions",
     description:
-      "Step into the spotlight of your healing journey. These powerful livestreams are where our community gathers in real time for wisdom, experience, and life-changing breakthroughs. No replays. Just connection - it's your invitation to transform alongside others doing the work.",
+      "This is where real growth happens​ - live, with others by your side. In every SHiFT livestream, you’ll learn directly from licensed therapists and wellness experts while connecting with members walking their own growth path. These sessions are interactive, vulnerable, and transformative. You’re not just holding space for others​ - you’re being seen, supported, and challenged in return. For many, it’s the first time they’ve felt this kind of emotional presence. And when you connect with someone, you don’t lose them when the session ends​ - you continue the conversation, connection, and growth back on the SHiFT platform. This is where you find your people.",
     icon: <Party className="size-10 lg:size-14" />,
   },
   {
     title: "SHiFT Sanctuary",
     subtitle: "Speak and Be Seen",
     description:
-      "This is a space for real connection and real progress. In the SHiFT Sanctuary, you’re free to be honest about where you are and what you need. It’s a space built on respect, safety, and shared commitment to personal growth. Here, your voice matters, your growth is recognized, and your presence contributes to something meaningful. No performance. No pretending. Just people doing the work, together.",
+      "This is your space to get real. The SHiFT Sanctuary is where members come to reflect, share, and connect around what they’re actually working through​. Built on trust, respect, and a shared commitment to growth, this is a space where honesty is welcomed, boundaries are honored, and progress​ - however messy​ - is acknowledged. Your voice matters here. Your experience matters. And your willingness to show up makes this space stronger for everyone in it.",
     icon: <UsersFlower className="size-10 lg:size-14" />,
   },
   {
-    title: "SHiFT's MiniSessions",
-    subtitle: "Workshops with Industry Leaders",
+    title: "SHiFT MiniSessions",
+    subtitle: "Live Workshops with Industry Leaders",
     description:
-      "Experience breakthrough insights from the world's top healers, teachers, and visionaries. These intimate live workshops are where time transformation collides. You'll love every MiniSession change - and deeply seen.",
+      "These are powerful, interactive workshops where you gather real tools for growth. Led by guest hosts - therapists, authors, healers, and wellness leaders - each MiniSession offers something tangible: a practice, framework, or insight you can apply right away. Some will teach you original techniques developed through lived and clinical experience. Others may guide you through a book club using their own work. Whether it’s breathwork, journaling, relationship tools, or a new way of seeing yourself - you’re not just learning, you’re building a toolbox that lasts.",
     icon: <UsersGear className="size-10 lg:size-14" />,
   },
   {
     title: "The Practice",
-    subtitle: "Daily Prompts. Weekly Challenges.",
+    subtitle: "Daily Prompts. Weekly Challenges. Monthly Focus.",
     description:
-      "This is where growth gets real—and doable. Every day, you’ll get quick questions and polls to spark insight. Each week, a challenge to stretch your habits. And every month, a theme to help you focus on what matters most. It’s all designed to build emotional strength, deepen self-awareness, and keep you moving forward—one small shift at a time.",
+      "This is where growth gets real - and fun. Each day, you’ll get a quick prompt or poll to check in, reflect, or shift your mindset. Each week, a challenge designed to stretch your habits. Every month, a theme that helps you focus and stay aligned.​ It’s not about just knowing what to do - it’s about actually doing it. The Practice is how we move from insight to real change. Small, consistent shifts build emotional strength, clarity, and momentum. It’s through this daily investment in ourselves that we become our best selves and live our best lives.",
     icon: <GearLightbulb className="size-10 lg:size-14" />,
   },
   {
-    title: "The Founders Circle",
-    subtitle: "Your Welcome Party",
+    title: "The Homecoming",
+    subtitle: "Meet Your Personal Welcome Party",
     description:
-      "Imagine walking into the coolest gathering - you're greeted at the door, introduced to a few great people, and given the inside scoop on where things are happening. That’s what The Founders Circle is. A live monthly gathering where you’ll be welcomed by the SHiFT hosts and some of our Inner Circle - longtime members who know the space, love the mission, and are here to make sure you feel right at home.",
+      "We’re so excited you’re here! Join us for a live welcome gathering where you’ll meet SHiFT’s founder, our core team, and members of your new community. You’ll get an inside look at what SHiFT is all about​ - plus a short tour of the platform, built with you in mind.​ This isn’t just orientation​ - it’s a co-creation. Your needs, insights, and voice help shape what SHiFT becomes. As we grow into a global leader in mental health and personal transformation, we’re doing it with you.",
     icon: <UserLigthbulb className="size-10 lg:size-14" />,
   },
   {
     title: "SHiFT Retreats",
-    subtitle: "Retreats and Camps",
+    subtitle: "The Breakthrough Experience",
     description:
-      "This is where the magic gets real. Our immersive, in-person retreats and camps are the culmination of your Best Year Ever. You'll laugh, cry, grow, and connect in ways that will shift your life forever. This is not a break from the work - it's the embodiment of it.",
+      "SHiFT Retreats are immersive, in-person experiences where all the work you’ve been doing comes alive. They are the culmination of your Best Year Ever and the launchpad for becoming who you truly are in the world.​ Over the course of a few unforgettable days, you’ll dive deep into guided practices, confront what’s been holding you back, release it, and step into the person you’re meant to be. You’ll move your body, unlock emotion, connect with others on a deep level, and leave with greater clarity, confidence, and connection to our shared community.​ This is the moment that shifts everything.",
     icon: <SuitcaseFlower className="size-10 lg:size-14" />,
   },
 ];

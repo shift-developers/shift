@@ -25,20 +25,20 @@ const WhatWeDoPage = ({ therapists }: Props) => (
         }}
       >
         <div className="my-container flex items-center lg:justify-end h-full">
-          <div className="flex flex-col gap-5 lg:text-2xl font-proxima font-bold text-white max-w-[500px] z-[1] -mt-20">
+          <div className="flex flex-col gap-5 lg:text-3xl font-proxima font-bold text-white max-w-[500px] z-[1] mt-6">
             <p>
-              We go beyond mere content delivery, to offer a personalized
-              actionable roadmap for real mental health progress.
+              Designed To Heal: We go beyond mere content delivery, to offer a
+              personalized actionable roadmap for real mental health progress.
             </p>
             <p>
               In the rapidly growing online education and personal growth
               industry, SHiFT uniquely bridges the gap with a
               scientifically-backed,data-driven approach, distinguishing us from
-              other health and wellness products.
+              other mental health products.
             </p>
           </div>
         </div>
-        <div className="absolute top-0 left-0 w-full h-full bg-dark-blue/50" />
+        <div className="absolute top-0 left-0 w-full h-full bg-dark-blue/10" />
 
         <img
           src="/images/blue-vector.png"
@@ -53,12 +53,16 @@ const WhatWeDoPage = ({ therapists }: Props) => (
     <section className="px-5 lg:px-32 xl:px-48 mt-20 lg:mt-[200px] lg:mb-[100px]">
       <div className="flex flex-col gap-6 text-center items-center justify-center max-w-[880px] mx-auto">
         <h2 className="text-3xl lg:text-5xl font-gothic font-bold">
-          A New Way to Heal Starts Now
+          Breakthroughs Once Reserved For Therapy - Now Yours
         </h2>
         <p className="text-xl lg:text-2xl font-proxima text-neutral-750">
-          Discover the knowledge, tools, and proven steps therapists use to
-          accelerate healing and emotional well-being, guiding you on a journey
-          of personal transformation.
+          SHiFT’s therapist-led MasterSessions provide you with direct access to
+          the same powerful tools, strategies, and inner work that have changed
+          thousands of lives. This is your chance to do the work - guided by
+          experts who bring both lived and clinical experience. This self-paced
+          transformational journey, combined with our revolutionary community
+          learning approach, gives you the support, accountability, and
+          connection you need to live your best life.
         </p>
         <Button text="Begin Journey" type="primary" />
       </div>

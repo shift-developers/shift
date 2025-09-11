@@ -11,7 +11,7 @@ export const getTestimonials = async (): Promise<Testimonial[]> => {
   try {
     const entries = await contentfulClient.getEntries({
       content_type: "testimonials",
-      order: ["fields.name"],
+      order: ["fields.order"],
     });
 
     const testimonials: Testimonial[] = entries.items.map((item: any) => ({

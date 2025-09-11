@@ -10,7 +10,7 @@ const ShiftIntro = () => (
             Therapy Reimagined. Healing, Redefined.
           </h3>
           <p className="text-neutral-750 lg:text-xl font-proxima flex flex-col">
-            SHiFT is a mental health platform like nothing you&apos;ve seen
+            SHiFT &trade; is a mental health platform like nothing you&apos;ve seen
             before. Our MasterSessions are immersive video experiences that
             deliver raw, honest, deeply human stories and lessons presented by
             therapists who&apos;ve turned their own pain into purpose. This

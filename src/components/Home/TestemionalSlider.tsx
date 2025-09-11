@@ -55,16 +55,12 @@ const TestimonialSlider = ({ testimonials }: TestimonialSliderProps) => {
 
   return (
     <section className="my-container">
-      <div className="flex flex-col items-center justify-center text-center gap-[20px] lg:mb-[100px]">
+      <div className="flex flex-col items-center justify-center text-center gap-[20px] lg:mb-[80px]">
         <h2 className="text-3xl lg:text-5xl font-gothic font-bold">
           What They Say About Our
           <br />
           MasterSessions
         </h2>
-        <p className="text-gray-750 lg:text-2xl font-proxima max-w-2xl mx-auto">
-          Hear from our users who have transformed their lives with SHiFT&apos;s
-          authentic and empowering MasterSessions.
-        </p>
       </div>
 
       <div className="relative lg:mt-12 flex justify-center">
@@ -79,11 +75,11 @@ const TestimonialSlider = ({ testimonials }: TestimonialSliderProps) => {
               }}
             >
               <Quote className="text-[#006FFF] mb-4 mx-auto" width={78} />
+              <p className="text-xl mb-3 font-bold text-[#001b52]">{t.name}</p>
               <p className="text-sm text-gray-700 leading-relaxed mb-4">
                 {t.quote.replace(/"/g, "")}
               </p>
               <div className="mt-auto">
-                <p className="text-sm font-bold text-[#001b52]">{t.name}</p>
                 <p className="text-sm font-medium text-gray-600">{t.title}</p>
               </div>
             </div>

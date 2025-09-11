@@ -40,3 +40,40 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
 
 # shift-website
+
+## Environment Variables
+
+To use the contact form functionality, you need to set up the following environment variables:
+
+Create a `.env.local` file in the root directory with:
+
+```bash
+# SendGrid Configuration
+SENDGRID_API_KEY=your_sendgrid_api_key_here
+FROM_EMAIL=noreply@shift.com
+ADMIN_EMAIL=admin@shift.com
+```
+
+### Setup Instructions:
+
+1. **Get SendGrid API Key:**
+   - Sign up at [SendGrid](https://sendgrid.com/)
+   - Go to Settings > API Keys
+   - Create a new API key with "Mail Send" permissions
+   - Copy the API key to your `.env.local` file
+
+2. **Verify Sender Email:**
+   - In SendGrid dashboard, go to Settings > Sender Authentication
+   - Verify the email address you want to use as the "from" address
+   - Update `FROM_EMAIL` in your `.env.local` file
+
+3. **Set Admin Email:**
+   - Update `ADMIN_EMAIL` with the email where you want to receive contact form submissions
+
+## Contact Form
+
+The contact form is available at `/contact-us` and includes:
+- Form validation using Formik and Yup
+- SendGrid email integration
+- Automatic confirmation emails to users
+- Admin notifications for new submissions

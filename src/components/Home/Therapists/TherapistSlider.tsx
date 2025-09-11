@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { useKeenSlider } from "keen-slider/react";
 import Image from "next/image";
 
@@ -7,8 +6,6 @@ interface Props {
 }
 
 const TherapistSlider = ({ therapists }: Props) => {
-  const [activeTag, setActiveTag] = useState<string>("All");
-
   const [sliderRef] = useKeenSlider<HTMLDivElement>({
     slides: {
       perView: 6.5,
@@ -43,11 +40,7 @@ const TherapistSlider = ({ therapists }: Props) => {
         <div className="relative w-full max-lg:mt-8 max-[1920px]:max-w-[1920px] min-[1920px]:!pl-0 min-[1920px]:ml-[calc((100%-1600px)/2)] ">
           {/* Scrollable wrapper with scrollbar */}
           <div>
-            <div
-              key={activeTag}
-              ref={sliderRef}
-              className="keen-slider flex gap-4"
-            >
+            <div ref={sliderRef} className="keen-slider flex gap-4">
               {firstSessionTherapists.map((t) => (
                 <div
                   key={t.id}
