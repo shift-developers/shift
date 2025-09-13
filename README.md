@@ -2,7 +2,7 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ## Getting Started
 
-First, run the development server:
+First, run the development server
 
 ```bash
 npm run dev
@@ -57,12 +57,14 @@ ADMIN_EMAIL=admin@shift.com
 ### Setup Instructions:
 
 1. **Get SendGrid API Key:**
+
    - Sign up at [SendGrid](https://sendgrid.com/)
    - Go to Settings > API Keys
    - Create a new API key with "Mail Send" permissions
    - Copy the API key to your `.env.local` file
 
 2. **Verify Sender Email:**
+
    - In SendGrid dashboard, go to Settings > Sender Authentication
    - Verify the email address you want to use as the "from" address
    - Update `FROM_EMAIL` in your `.env.local` file
@@ -73,6 +75,7 @@ ADMIN_EMAIL=admin@shift.com
 ## Contact Form
 
 The contact form is available at `/contact-us` and includes:
+
 - Form validation using Formik and Yup
 - SendGrid email integration
 - Automatic confirmation emails to users
