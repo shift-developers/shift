@@ -43,12 +43,18 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/b
 
 ## Environment Variables
 
-To use the contact form functionality, you need to set up the following environment variables:
-
-Create a `.env.local` file in the root directory with:
+This project requires several environment variables for different services. Copy `.env.example` to `.env.local` and fill in your actual values:
 
 ```bash
-# SendGrid Configuration
+# Contentful CMS Configuration
+CONTENTFUL_SPACE_ID=your_contentful_space_id_here
+CONTENTFUL_ACCESS_TOKEN=your_contentful_access_token_here
+
+# ConvertKit Configuration (Newsletter)
+KIT_API_KEY=your_convertkit_api_key_here
+KIT_FORM_ID=your_convertkit_form_id_here
+
+# SendGrid Configuration (Contact Form)
 SENDGRID_API_KEY=your_sendgrid_api_key_here
 FROM_EMAIL=noreply@shift.com
 ADMIN_EMAIL=admin@shift.com
@@ -56,21 +62,37 @@ ADMIN_EMAIL=admin@shift.com
 
 ### Setup Instructions:
 
-1. **Get SendGrid API Key:**
+1. **Contentful CMS Setup:**
+   - Log in to [Contentful](https://app.contentful.com/)
+   - Navigate to Settings > API keys
+   - Create or select a Content Delivery API key
+   - Copy the Space ID and Content Delivery API access token
+   - Add these to your `.env.local` file
 
+2. **ConvertKit Newsletter Setup:**
+   - Sign up or log in at [ConvertKit](https://app.convertkit.com/)
+   - Go to Account Settings > Advanced
+   - Generate an API Key
+   - Navigate to Forms and copy your form ID from the URL or embed code
+   - Add both values to your `.env.local` file
+
+3. **SendGrid Email Setup:**
    - Sign up at [SendGrid](https://sendgrid.com/)
    - Go to Settings > API Keys
    - Create a new API key with "Mail Send" permissions
    - Copy the API key to your `.env.local` file
+   - Verify sender authentication in Settings > Sender Authentication
+   - Update `FROM_EMAIL` and `ADMIN_EMAIL` as needed
 
-2. **Verify Sender Email:**
+### Using the Template
 
-   - In SendGrid dashboard, go to Settings > Sender Authentication
-   - Verify the email address you want to use as the "from" address
-   - Update `FROM_EMAIL` in your `.env.local` file
+A `.env.example` file is provided with all required variables. Copy it to `.env.local` and replace the placeholder values with your actual credentials:
 
-3. **Set Admin Email:**
-   - Update `ADMIN_EMAIL` with the email where you want to receive contact form submissions
+```bash
+cp .env.example .env.local
+```
+
+**Important:** Never commit `.env.local` to version control as it contains sensitive credentials
 
 ## Contact Form
 

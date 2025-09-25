@@ -223,6 +223,12 @@ const ContactUsPage = () => {
               />
             </div>
             <Button text="Send" type="primary" />
+            <p className="text-center font-proxima text-neutral-750">
+              By submitting your information, you acknowledge that you have read our
+              privacy policy and consent to receive email communication from us.
+              Your Information is 100% secure and will never be shared with anyone.
+              You can unsubscribe at any time.
+            </p>
           </form>
           <div className="text-dark-blue font-bold text-2xl font-proxima flex flex-col gap-5">
             <p>
@@ -246,12 +252,6 @@ const ContactUsPage = () => {
             <p>We absolutely love what we do and we think you will too.</p>
           </div>
         </div>
-        <p className="text-center font-proxima text-neutral-750 max-w-[500px] mx-auto">
-          By submitting your information, you acknowledge that you have read our
-          privacy policy and consent to receive email communication from us.
-          Your Information is 100% secure and will never be shared with anyone.
-          You can unsubscribe at any time.
-        </p>
       </div>
     </div>
   );

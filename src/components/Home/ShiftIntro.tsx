@@ -81,7 +81,7 @@ const ShiftIntro = () => (
               that change is possible when we are willing to do the work.
             </span>
           </p>
-          <p className="font-bold lg:text-xl text-black italic">
+          <p className="font-bold lg:text-xl text-black italic font-proxima">
             Relatable. Inspirational. Deeply human.
           </p>
         </div>

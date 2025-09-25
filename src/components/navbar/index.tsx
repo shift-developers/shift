@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 
-import { Logo, MenuIcon } from "@/assets/svgs";
+import { LogoWhite, MenuIcon } from "@/assets/svgs";
 import { NavbarMenu } from "./NavbarMenu";
 import { MobileMenu } from "./MobileMenu";
 
@@ -40,7 +40,7 @@ export default function Navbar() {
         <div className="my-container">
           <div className="py-5 flex items-center justify-between">
             <Link href="/">
-              <Logo className="size-14 md:size-16 xl:size-[100px]" />
+              <LogoWhite className="size-14 md:size-16 xl:size-[100px]" />
             </Link>
             <MenuIcon
               className="lg:hidden cursor-pointer"

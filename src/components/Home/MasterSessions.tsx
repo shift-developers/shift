@@ -37,7 +37,7 @@ const MasterSessions = () => {
             </li>
           </ul>
 
-          <p className="italic text-black mt-[40px] font-proxima">
+          <p className="font-bold lg:text-xl text-black italic mt-[40px] font-proxima">
             No perfection. Just progress. Healing starts where you are.
           </p>
         </div>

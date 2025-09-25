@@ -33,7 +33,7 @@ const WhatWeDoPage = ({ therapists }: Props) => (
             <p>
               In the rapidly growing online education and personal growth
               industry, SHiFT uniquely bridges the gap with a
-              scientifically-backed,data-driven approach, distinguishing us from
+              scientifically-backed, data-driven approach, distinguishing us from
               other mental health products.
             </p>
           </div>

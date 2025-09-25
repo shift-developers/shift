@@ -72,7 +72,7 @@ const WhoWeArePage = ({ team }: Props) => (
             ))}
           </div>
           <div className="flex justify-center mt-10 mb-0 2xl:mb-40">
-            <Button type="primary" text="Begin Journey" />
+            <Button type="primary" text="Join Waitlist" />
           </div>
         </div>
 

@@ -68,20 +68,20 @@ const Home = ({ therapists, testimonials, homepageVideo }: HomeProps) => (
           className="w-full h-[1100px]"
         />
         <div className="absolute inset-0 z-10 flex">
-          <div className="my-container flex-1 flex items-center justify-center">
-            <div className="flex max-lg:flex-col lg:justify-between gap-10">
+          <div className="flex items-center justify-center flex-1 my-container max-lg:items-start max-lg:pt-72">
+            <div className="flex gap-10 max-lg:flex-col lg:justify-between w-full">
               <h3 className="text-3xl lg:text-5xl text-pure-white font-gothic lg:-mt-20">
                 Representation
                 <br /> Matters
               </h3>
-              <p className="text-pure-white lg:text-xl font-proxima max-w-[707px] max-lg:px-5 pb-20">
+              <div className="text-pure-white lg:text-xl font-proxima max-w-[707px] max-lg:px-5 pb-20">
                 At SHiFT, we&apos;re changing the mental health landscape by
                 elevating therapists from diverse backgrounds, races, and lived
                 experiences. We know that people of color and LGBTQ+ communities
                 face unique challenges, and representation is critical for those
                 seeking support and for those providing it. Our therapists
                 reflect diverse backgrounds, identities, and lived experiences.
-              </p>
+              </div>
             </div>
           </div>
         </div>

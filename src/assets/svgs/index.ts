@@ -1,5 +1,6 @@
 export { default as Logo } from "./Logo";
 export { default as LogoColor } from "./LogoColor";
+export { default as LogoWhite } from "./LogoWhite";
 
 // Socials
 export { default as FacebookSVG } from "./socials/FacebookSVG";

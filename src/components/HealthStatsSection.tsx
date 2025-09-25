@@ -42,14 +42,10 @@ export const HealthStatsSection = () => {
               SHiFT is the solution.
             </h2>
             <p className="text-neutral-750 lg:text-2xl font-proxima">
-              SHiFT&apos;s innovative platform is dedicated to democratizing therapy,
-              ensuring that people worldwide have access to the essential tools
-              for mental well-being and personal growth.
-            </p>
-            <p className="text-neutral-750 lg:text-2xl font-proxima">
-              Our mission is to unlock the transformative power of therapy
-              through a self-paced, therapist-guided journey of self-discovery,
-              thus fostering the growth of emotional maturity.
+              SHiFT delivers therapist-led MasterSessions and a revolutionary
+              community learning model that combines clinical and lived expertise
+              to make transformational mental health support accessible,
+              self-paced, and powerfully effective.
             </p>
           </div>
           <HealthGroup />

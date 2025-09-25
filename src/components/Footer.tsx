@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import {
-  Logo,
+  LogoWhite,
   FacebookSVG,
   InstagramSVG,
   LinkedInSVG,
@@ -12,13 +12,13 @@ const footerSections = [
   {
     title: "Our lawyers told us to tell you",
     links: [
-      { label: "Terms & Conditions", href: "#" },
-      { label: "Privacy Policy", href: "#" },
-      { label: "Cookies Policy", href: "#" },
+      { label: "Terms & Conditions", href: "/terms-and-conditions" },
+      { label: "Privacy Policy", href: "/privacy-policy" },
+      { label: "Cookies Policy", href: "/cookie-policy" },
     ],
   },
   {
-    title: "SHIFT",
+    title: "SHiFT",
     links: [
       { label: "Who We Are", href: "/who-we-are" },
       { label: "What We Do", href: "/what-we-do" },
@@ -130,7 +130,7 @@ export default function Footer() {
               <div className="lg:flex-1 flex lg:items-start lg:justify-between flex-col lg:flex-row max-lg:gap-8">
                 <div className="flex flex-col lg:max-w-[350px] xl:max-w-[450px]">
                   <div className="mb-8">
-                    <Logo className="size-[100px]" />
+                    <LogoWhite className="size-[100px]" />
                   </div>
                   <p className="md:text-xl font-proxima font-bold leading-relaxed text-pure-white">
                     Keep up to date with new releases, live events, giveaways
@@ -171,7 +171,7 @@ export default function Footer() {
                     <a href="#" className="underline hover:no-underline">
                       Privacy Policy
                     </a>{" "}
-                    and provide your consent to receive updates from SHIFT. We
+                    and provide your consent to receive updates from SHiFT. We
                     will never share your info with anyone.
                   </p>
                 </div>
@@ -215,7 +215,7 @@ export default function Footer() {
             </div>
           </div>
           <div className="text-sm md:text-base text-pure-white font-proxima font-bold">
-            Copyright @ 2025 | SHIiFT App Inc | All rights reserved.
+            © 2025 | SHiFT App Inc | All Rights Reserved.
           </div>
         </div>
       </div>
