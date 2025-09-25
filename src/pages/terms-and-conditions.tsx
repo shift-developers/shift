@@ -1,4 +1,4 @@
-import { useState } from "react";
+/* eslint-disable react/no-unescaped-entities */
 import Link from "next/link";
 
 const PolicyLayout = ({ children, activePolicy }: { children: React.ReactNode; activePolicy: string }) => {

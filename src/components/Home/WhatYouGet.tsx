@@ -1,6 +1,5 @@
 import {
   GearLightbulb,
-  LogoColor,
   Party,
   SuitcaseFlower,
   UserLigthbulb,
