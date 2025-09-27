@@ -122,6 +122,7 @@ export default function Footer() {
   return (
     <footer
       className="relative text-white pb-8 md:pb-14 bg-cover bg-no-repeat pt-[200px]"
+      data-footer-version="v3-mobile-responsive-2024-11-27"
       style={{
         backgroundImage: "url('/images/background.png')",
       }}
