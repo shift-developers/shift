@@ -24,7 +24,7 @@ const PolicyLayout = ({ children, activePolicy }: { children: React.ReactNode; a
         <div className="flex flex-col lg:flex-row gap-8">
           {/* Sidebar */}
           <aside className="lg:w-64 px-4">
-            <nav className="bg-white rounded-lg shadow-sm p-4">
+            <nav className="bg-white rounded-lg p-4">
               <ul className="space-y-2">
                 <li>
                   <Link
