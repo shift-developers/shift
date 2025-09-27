@@ -4,6 +4,13 @@
 User-agent: *
 Allow: /
 
+# Disallow old/redirected pages from being indexed
+Disallow: /who-we-serve
+Disallow: /blog
+Disallow: /join-us
+Disallow: /about
+Disallow: /services
+
 # Disallow API routes
 Disallow: /api/
 

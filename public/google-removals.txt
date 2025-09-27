@@ -1,0 +1,12 @@
+# URLs to remove from Google Search
+# Submit these in Google Search Console > Removals
+
+https://shiftmastersessions.com/who-we-serve
+https://www.shiftmastersessions.com/who-we-serve
+https://shiftmastersessions.com/blog
+https://www.shiftmastersessions.com/blog
+
+# These URLs now redirect permanently (301) to correct pages:
+# - /who-we-serve → /who-we-are
+# - /blog → / (homepage)
+# - /join-us → / (homepage) - Keep this if you want it to show
