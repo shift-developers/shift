@@ -1,28 +1,8 @@
 import { useEffect } from "react";
+import Script from "next/script";
 import { Banner } from "@/components";
 
 const SignUpPage = () => {
-  useEffect(() => {
-    // Load the Kit.com script
-    const script = document.createElement("script");
-    script.src = "https://shiftmastersessions.kit.com/5d2df09644/index.js";
-    script.async = true;
-    script.setAttribute("data-uid", "5d2df09644");
-
-    // Find the container and append the script
-    const container = document.getElementById("kit-form-container");
-    if (container) {
-      container.appendChild(script);
-    }
-
-    // Cleanup function to remove script when component unmounts
-    return () => {
-      if (container && container.contains(script)) {
-        container.removeChild(script);
-      }
-    };
-  }, []);
-
   return (
     <div className="w-full bg-white">
       <Banner
@@ -32,12 +12,15 @@ const SignUpPage = () => {
 
       <div className="my-container py-20">
         <div className="max-w-3xl mx-auto">
-          {/* Kit.com form will be injected here */}
-          <div id="kit-form-container" className="w-full">
-            {/* The script will inject the form here */}
-          </div>
+          {/* Kit.com form */}
+          <Script
+            async
+            data-uid="5d2df09644"
+            src="https://shiftmastersessions.kit.com/5d2df09644/index.js"
+            strategy="lazyOnload"
+          />
 
-          {/* Optional: Add additional content below the form */}
+          {/* Additional content below the form */}
           <div className="mt-12 text-center text-gray-600">
             <p className="text-sm">
               By signing up, you agree to our{" "}
