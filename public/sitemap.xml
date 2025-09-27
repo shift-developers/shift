@@ -37,13 +37,6 @@
     <priority>0.7</priority>
   </url>
 
-  <url>
-    <loc>https://shiftmastersessions.com/sign-up</loc>
-    <lastmod>2025-09-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
   <!-- Legal Pages -->
   <url>
     <loc>https://shiftmastersessions.com/terms-and-conditions</loc>

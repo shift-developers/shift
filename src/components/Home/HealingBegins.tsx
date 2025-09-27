@@ -48,7 +48,7 @@ const HealingBegins = () => {
               </p>
               <div className="flex flex-row gap-4">
                 <Button
-                  href="/sign-up"
+                  href="https://shiftmastersessions.kit.com/02136d09de"
                   text="Join Waitlist"
                   type="primary"
                   color="blue"
