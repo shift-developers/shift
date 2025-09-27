@@ -122,7 +122,7 @@ export default function Footer() {
   return (
     <footer
       className="relative text-white pb-8 md:pb-14 bg-cover bg-no-repeat pt-[200px]"
-      data-footer-version="v4-explicit-font-sizes-2024-11-27"
+      data-footer-version="v5-min-width-no-wrap-2024-11-27"
       style={{
         backgroundImage: "url('/images/background.png')",
       }}
@@ -183,10 +183,10 @@ export default function Footer() {
             {/* Right: Footer Links and Social Icons */}
             <div className="flex flex-col gap-12 lg:justify-end">
               {/* Footer Links Grid */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 sm:gap-12 lg:gap-20 xl:gap-24">
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 sm:gap-12 lg:gap-16">
                 {footerSections.map((section) => (
-                  <div key={section.title} className="flex flex-col">
-                    <h4 className="text-pure-white font-bold font-proxima text-[16px] sm:text-[18px] md:text-[18px] lg:text-[18px] h-auto sm:h-[3rem] lg:h-[3rem] flex items-start mb-4 sm:mb-6">
+                  <div key={section.title} className="flex flex-col min-w-[140px] sm:min-w-[160px]">
+                    <h4 className="text-pure-white font-bold font-proxima text-[16px] sm:text-[18px] md:text-[18px] lg:text-[18px] whitespace-nowrap sm:whitespace-normal mb-4 sm:mb-6">
                       {section.title}
                     </h4>
                     <ul className="flex flex-col gap-3">
