@@ -1,5 +1,3 @@
-import { useEffect } from "react";
-import Script from "next/script";
 import { Banner } from "@/components";
 
 const SignUpPage = () => {
@@ -13,11 +11,10 @@ const SignUpPage = () => {
       <div className="my-container py-20">
         <div className="max-w-3xl mx-auto">
           {/* Kit.com form */}
-          <Script
-            async
-            data-uid="5d2df09644"
-            src="https://shiftmastersessions.kit.com/5d2df09644/index.js"
-            strategy="lazyOnload"
+          <div
+            dangerouslySetInnerHTML={{
+              __html: `<script async data-uid="5d2df09644" src="https://shiftmastersessions.kit.com/5d2df09644/index.js"></script>`
+            }}
           />
 
           {/* Additional content below the form */}
