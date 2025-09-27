@@ -81,7 +81,7 @@ const MasterSessions = () => {
               type="secondary"
               color="blue"
               text="Join Waitlist"
-              href="https://shiftmastersessions.kit.com/02136d09de"
+              href="/sign-up"
               className="w-[270px]"
             />
           </div>

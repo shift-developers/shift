@@ -39,7 +39,7 @@ const Home = ({ therapists, testimonials, homepageVideo }: HomeProps) => {
         description="Therapists who have navigated life's challenges use their lived experience to guide and support your healing and transformation."
         buttons={[
           { type: "primary", text: "Coming Soon", href: "#" },
-          { type: "secondary", text: "Join Waitlist", href: "https://shiftmastersessions.kit.com/02136d09de" },
+          { type: "secondary", text: "Join Waitlist", href: "/sign-up" },
         ]}
       />
     <ShiftIntro />
