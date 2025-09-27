@@ -26,21 +26,22 @@ interface HomeProps {
   homepageVideo: HomepageVideo | null;
 }
 
-const Home = ({ therapists, testimonials, homepageVideo }: HomeProps) => (
-  <div className="w-full">
-    <Banner
-      header={
-        <>
-          A New Era of Mental Health. A Movement of Healing -{" "}
-          <span className="italic">Together.</span>
-        </>
-      }
-      description="Therapists who have navigated life's challenges use their lived experience to guide and support your healing and transformation."
-      buttons={[
-        { type: "primary", text: "Coming Soon", href: "#" },
-        { type: "secondary", text: "Join Waitlist", href: "#" },
-      ]}
-    />
+const Home = ({ therapists, testimonials, homepageVideo }: HomeProps) => {
+  return (
+    <div className="w-full">
+      <Banner
+        header={
+          <>
+            A New Era of Mental Health. A Movement of Healing -{" "}
+            <span className="italic">Together.</span>
+          </>
+        }
+        description="Therapists who have navigated life's challenges use their lived experience to guide and support your healing and transformation."
+        buttons={[
+          { type: "primary", text: "Coming Soon", href: "#" },
+          { type: "secondary", text: "Join Waitlist", href: "https://shiftmastersessions.kit.com/02136d09de" },
+        ]}
+      />
     <ShiftIntro />
     <div className="my-container my-14 lg:mt-56 lg:mb-36">
       {homepageVideo?.videoUrl ? (
@@ -87,13 +88,14 @@ const Home = ({ therapists, testimonials, homepageVideo }: HomeProps) => (
         </div>
       </section>
     </div>
-    <WhatYouGet />
-    <MasterSessions />
-    <TestemionalSlider testimonials={testimonials} />
-    <HealingBegins />
-    <FAQ />
-  </div>
-);
+      <WhatYouGet />
+      <MasterSessions />
+      <TestemionalSlider testimonials={testimonials} />
+      <HealingBegins />
+      <FAQ />
+    </div>
+  );
+}
 
 export const getStaticProps: GetStaticProps = async () => {
   const therapists = await getTherapists();

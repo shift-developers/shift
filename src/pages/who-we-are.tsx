@@ -32,9 +32,10 @@ type Props = {
   team: TeamMember[];
 };
 
-const WhoWeArePage = ({ team }: Props) => (
-  <div className="w-full bg-white">
-    <Banner
+const WhoWeArePage = ({ team }: Props) => {
+  return (
+    <div className="w-full bg-white">
+      <Banner
       header="Who We Are"
       description="The mental health field has long lacked diversity. Both people of color and LGBTQ+ communities face unique challenges, and it’s crucial to have diverse voices guiding their healing and growth. SHiFT brings therapists from all backgrounds, so that everyone feels seen, heard, and understood."
     />
@@ -72,7 +73,7 @@ const WhoWeArePage = ({ team }: Props) => (
             ))}
           </div>
           <div className="flex justify-center mt-10 mb-0 2xl:mb-40">
-            <Button type="primary" text="Join Waitlist" />
+            <Button type="primary" text="Join Waitlist" href="https://shiftmastersessions.kit.com/02136d09de" />
           </div>
         </div>
 
@@ -114,7 +115,8 @@ const WhoWeArePage = ({ team }: Props) => (
       </div>
     </section>
   </div>
-);
+  );
+}
 
 export const getStaticProps: GetStaticProps = async () => {
   const team = await getTeam();

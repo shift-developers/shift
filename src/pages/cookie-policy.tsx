@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const PolicyLayout = ({ children, activePolicy }: { children: React.ReactNode; activePolicy: string }) => {
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-white">
       {/* Banner Section */}
       <section
         className="relative pt-32 pb-20 z-[10]"
@@ -76,7 +76,7 @@ const PolicyLayout = ({ children, activePolicy }: { children: React.ReactNode; a
           </aside>
 
           {/* Main Content Area */}
-          <main className="flex-1 bg-white rounded-lg shadow-sm p-8">
+          <main className="flex-1 bg-white rounded-lg p-8 lg:px-12 xl:px-16">
             {children}
           </main>
         </div>

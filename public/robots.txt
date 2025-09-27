@@ -1,0 +1,14 @@
+# Robots.txt for SHiFT
+# https://shiftmastersessions.com
+
+User-agent: *
+Allow: /
+
+# Disallow API routes
+Disallow: /api/
+
+# Point to sitemap
+Sitemap: https://shiftmastersessions.com/sitemap.xml
+
+# Crawl-delay for bots that respect it (in seconds)
+Crawl-delay: 1

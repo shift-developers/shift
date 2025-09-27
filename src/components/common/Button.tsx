@@ -31,13 +31,17 @@ const Button = ({
   const styles = type === "primary" ? fillColor : outlineColor;
 
   if (href) {
-    <Link href={href ?? ""} className={`${baseStyles} ${styles} ${className}`}>
-      {text}
-    </Link>;
+    return (
+      <Link href={href} className={`${baseStyles} ${styles} ${className}`}>
+        {text}
+      </Link>
+    );
   }
 
   return (
-    <button className={`${baseStyles} ${styles} ${className}`}>{text}</button>
+    <span className={`${baseStyles} ${styles} ${className} cursor-default`}>
+      {text}
+    </span>
   );
 };
 

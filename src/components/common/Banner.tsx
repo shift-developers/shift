@@ -3,7 +3,11 @@ import Button from "./Button";
 interface BannerProps {
   header: React.ReactNode;
   description: string;
-  buttons?: { type: "primary" | "secondary"; text: string; href: string }[];
+  buttons?: {
+    type: "primary" | "secondary";
+    text: string;
+    href?: string;
+  }[];
 }
 
 const Banner = ({ header, description, buttons }: BannerProps) => {

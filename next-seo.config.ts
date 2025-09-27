@@ -1,24 +1,25 @@
 import { DefaultSeoProps } from "next-seo";
 
 const defaultSEOConfig: DefaultSeoProps = {
-  title: "Shift – A New Era of Mental Health",
-  defaultTitle: "Shift – A New Era of Mental Health",
+  title: "SHiFT – A New Era of Mental Health",
+  defaultTitle: "SHiFT – A New Era of Mental Health",
   description:
-    "Shift is reimagining mental health through engaging content, expert voices, and an inclusive movement. Explore real healing with relatable therapy, trusted resources, and daily support in your journey to better mental well-being.",
+    "SHiFT is reimagining mental health through engaging content, expert voices, and an inclusive movement. Explore real healing with relatable therapy, trusted resources, and daily support in your journey to better mental well-being.",
+  canonical: "https://shiftmastersessions.com",
   openGraph: {
     type: "website",
     locale: "en_US",
     url: "https://shiftmastersessions.com",
-    siteName: "Shift",
-    title: "Shift – A New Era of Mental Health",
+    siteName: "SHiFT",
+    title: "SHiFT – A New Era of Mental Health",
     description:
-      "Shift is reimagining mental health through engaging content, expert voices, and an inclusive movement. Explore real healing with relatable therapy, trusted resources, and daily support in your journey to better mental well-being.",
+      "SHiFT is reimagining mental health through engaging content, expert voices, and an inclusive movement. Explore real healing with relatable therapy, trusted resources, and daily support in your journey to better mental well-being.",
     images: [
       {
         url: "https://shiftmastersessions.com/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Shift – Mental Health Reinvented",
+        alt: "SHiFT – Mental Health Reinvented",
       },
     ],
   },
@@ -31,7 +32,7 @@ const defaultSEOConfig: DefaultSeoProps = {
     {
       name: "keywords",
       content:
-        "mental health, therapy, healing, support, wellness, mindfulness, self-care, Shift app, emotional health, online therapy, daily support, mental wellness, holistic health, guided healing",
+        "mental health, therapy, healing, support, wellness, mindfulness, self-care, SHiFT app, emotional health, online therapy, daily support, mental wellness, holistic health, guided healing",
     },
     {
       name: "theme-color",

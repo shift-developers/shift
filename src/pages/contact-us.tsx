@@ -222,7 +222,14 @@ const ContactUsPage = () => {
                 onChange={formik.handleChange}
               />
             </div>
-            <Button text="Send" type="primary" />
+            <div className="flex justify-center">
+              <button
+                type="submit"
+                className="inline-flex items-center justify-center rounded-full px-6 py-3 font-semibold text-sm transition bg-dark-blue text-white hover:bg-[#001F70] w-full lg:w-[200px]"
+              >
+                Send
+              </button>
+            </div>
             <p className="text-center font-proxima text-neutral-750">
               By submitting your information, you acknowledge that you have read our
               privacy policy and consent to receive email communication from us.
