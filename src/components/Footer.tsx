@@ -10,7 +10,7 @@ import Link from "next/link";
 
 const footerSections = [
   {
-    title: "Our lawyers told us to tell you",
+    title: "Legal",
     links: [
       { label: "Terms & Conditions", href: "/terms-and-conditions" },
       { label: "Privacy Policy", href: "/privacy-policy" },
@@ -122,7 +122,7 @@ export default function Footer() {
   return (
     <footer
       className="relative text-white pb-8 md:pb-14 bg-cover bg-no-repeat pt-[200px]"
-      data-footer-version="v5-min-width-no-wrap-2024-11-27"
+      data-footer-version="v6-aligned-sections-2024-11-27"
       style={{
         backgroundImage: "url('/images/background.png')",
       }}
@@ -183,18 +183,18 @@ export default function Footer() {
             {/* Right: Footer Links and Social Icons */}
             <div className="flex flex-col gap-12 lg:justify-end">
               {/* Footer Links Grid */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 sm:gap-12 lg:gap-16">
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 sm:gap-6 md:gap-8 lg:gap-12">
                 {footerSections.map((section) => (
-                  <div key={section.title} className="flex flex-col min-w-[140px] sm:min-w-[160px]">
-                    <h4 className="text-pure-white font-bold font-proxima text-[16px] sm:text-[18px] md:text-[18px] lg:text-[18px] whitespace-nowrap sm:whitespace-normal mb-4 sm:mb-6">
+                  <div key={section.title} className="flex flex-col">
+                    <h4 className="text-pure-white font-bold font-proxima text-[18px] mb-6 h-[28px] flex items-center">
                       {section.title}
                     </h4>
                     <ul className="flex flex-col gap-3">
                       {section.links.map((link) => (
-                        <li key={link.label}>
+                        <li key={link.label} className="h-[24px] flex items-center">
                           <Link
                             href={link.href}
-                            className="text-[14px] md:text-[16px] font-proxima text-pure-white/90 hover:text-white transition-colors"
+                            className="text-[14px] md:text-[15px] font-proxima text-pure-white/90 hover:text-white transition-colors"
                           >
                             {link.label}
                           </Link>
