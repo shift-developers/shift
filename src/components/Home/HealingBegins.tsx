@@ -4,9 +4,26 @@ import Image from "next/image";
 import Button from "../common/Button";
 
 const InviteFriendButtonComponent = () => {
+  const emailBody = `Hey [Friend's Name],
+
+I just discovered something really special, and it made me think of you.
+
+It's called SHiFT, and it just feels real. It's a space for personal growth, led by therapists who are sharing the messy, honest stuff they've been through and how it led them to help others. No theory heavy talking heads - just humans being human that makes you think, "I could actually do this, too."
+
+Wherever you are on your growth journey, it meets you exactly where you are. You can go solo at your own pace or join a new kind of community learning experience where you're doing the work alongside a million growth buddies.
+
+Check it out here: https://www.shiftmastersessions.com/
+
+Just felt like this was something worth passing along.
+
+Love,
+[Your Name]`;
+
+  const mailtoLink = `mailto:?subject=${encodeURIComponent("Check out SHiFT - Something special I wanted to share")}&body=${encodeURIComponent(emailBody)}`;
+
   return (
     <a
-      href={`mailto:isabell@shiftmastersessions.com?subject=Invite a friend to SHiFT&body=A New Era of Mental Health. A Movement of Healing - Together. LINK: ${window.location.href}`}
+      href={mailtoLink}
       target="_blank"
       rel="noopener noreferrer"
     >
