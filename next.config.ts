@@ -29,6 +29,17 @@ const nextConfig: NextConfig = {
         destination: '/what-we-do',
         permanent: true,
       },
+      // Redirect non-existent pages to homepage
+      {
+        source: '/join-us',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/blog',
+        destination: '/',
+        permanent: true,
+      },
     ];
   },
 };
