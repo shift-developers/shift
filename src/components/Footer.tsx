@@ -122,7 +122,7 @@ export default function Footer() {
   return (
     <footer
       className="relative text-white pb-8 md:pb-14 bg-cover bg-no-repeat pt-[200px]"
-      data-footer-version="v3-mobile-responsive-2024-11-27"
+      data-footer-version="v4-explicit-font-sizes-2024-11-27"
       style={{
         backgroundImage: "url('/images/background.png')",
       }}
@@ -136,7 +136,7 @@ export default function Footer() {
               <div className="mb-8">
                 <LogoWhite className="size-[100px]" />
               </div>
-              <p className="text-lg md:text-xl font-proxima font-bold leading-relaxed text-pure-white mb-4">
+              <p className="text-[18px] md:text-[20px] font-proxima font-bold leading-relaxed text-pure-white mb-4">
                 Keep up to date with new releases, live events, giveaways
                 and in-person events with our SHiFT news update.
               </p>
@@ -170,7 +170,7 @@ export default function Footer() {
                   </p>
                 )}
               </form>
-              <p className="text-sm text-pure-white/80 leading-relaxed">
+              <p className="text-[14px] text-pure-white/80 leading-relaxed">
                 By subscribing, you agree to our{" "}
                 <Link href="/privacy-policy" className="underline hover:no-underline">
                   Privacy Policy
@@ -186,7 +186,7 @@ export default function Footer() {
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 sm:gap-12 lg:gap-20 xl:gap-24">
                 {footerSections.map((section) => (
                   <div key={section.title} className="flex flex-col">
-                    <h4 className="text-pure-white font-bold font-proxima text-base sm:text-lg h-auto sm:h-[3rem] lg:h-[3rem] flex items-start mb-4 sm:mb-6">
+                    <h4 className="text-pure-white font-bold font-proxima text-[16px] sm:text-[18px] md:text-[18px] lg:text-[18px] h-auto sm:h-[3rem] lg:h-[3rem] flex items-start mb-4 sm:mb-6">
                       {section.title}
                     </h4>
                     <ul className="flex flex-col gap-3">
@@ -194,7 +194,7 @@ export default function Footer() {
                         <li key={link.label}>
                           <Link
                             href={link.href}
-                            className="text-sm md:text-base font-proxima text-pure-white/90 hover:text-white transition-colors"
+                            className="text-[14px] md:text-[16px] font-proxima text-pure-white/90 hover:text-white transition-colors"
                           >
                             {link.label}
                           </Link>
@@ -224,7 +224,7 @@ export default function Footer() {
           </div>
 
           {/* Copyright */}
-          <div className="text-sm md:text-base text-pure-white font-proxima font-bold border-t border-white/20 pt-6">
+          <div className="text-[14px] md:text-[16px] text-pure-white font-proxima font-bold border-t border-white/20 pt-6">
             © 2025 | SHiFT App Inc | All Rights Reserved.
           </div>
         </div>
