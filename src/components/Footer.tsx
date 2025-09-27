@@ -182,10 +182,10 @@ export default function Footer() {
             {/* Right: Footer Links and Social Icons */}
             <div className="flex flex-col gap-12 lg:justify-end">
               {/* Footer Links Grid */}
-              <div className="grid grid-cols-2 md:grid-cols-3 gap-12 lg:gap-20 xl:gap-24">
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 sm:gap-12 lg:gap-20 xl:gap-24">
                 {footerSections.map((section) => (
                   <div key={section.title} className="flex flex-col">
-                    <h4 className="text-pure-white font-bold font-proxima text-lg h-[4rem] lg:h-[3rem] flex items-start mb-6">
+                    <h4 className="text-pure-white font-bold font-proxima text-base sm:text-lg h-auto sm:h-[3rem] lg:h-[3rem] flex items-start mb-4 sm:mb-6">
                       {section.title}
                     </h4>
                     <ul className="flex flex-col gap-3">
