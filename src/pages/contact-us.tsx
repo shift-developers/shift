@@ -1,7 +1,7 @@
 import { useFormik } from "formik";
 import * as Yup from "yup";
 
-import { Banner, Button } from "@/components";
+import { Banner } from "@/components";
 
 const ContactUsPage = () => {
   const formik = useFormik({
