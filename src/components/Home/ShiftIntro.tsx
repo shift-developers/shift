@@ -6,12 +6,12 @@ const ShiftIntro = () => (
     <div className="flex flex-col gap-16 lg:gap-[200px] lg:mt-[130px]">
       <div className="flex flex-col lg:flex-row lg:items-center gap-16 lg:gap-[200px]">
         <div className="flex flex-col gap-5 lg:gap-8 w-full lg:w-[50%]">
-          <h3 className="text-black text-4xl 2xl:text-5xl font-gothic font-bold">
-            Therapy Reimagined. Healing, Redefined.
+          <h3 className="text-4xl font-bold text-black 2xl:text-5xl font-gothic">
+            A Movement of Healing – <span className="italic">Together.</span>
           </h3>
-          <p className="text-neutral-750 lg:text-xl font-proxima flex flex-col">
-            SHiFT &trade; is a mental health platform like nothing you&apos;ve seen
-            before. Our MasterSessions are immersive video experiences that
+          <p className="flex flex-col text-neutral-750 lg:text-xl font-proxima">
+            SHiFT &trade; is a mental health platform like nothing you&apos;ve
+            seen before. Our MasterSessions are immersive video experiences that
             deliver raw, honest, deeply human stories and lessons presented by
             therapists who&apos;ve turned their own pain into purpose. This
             isn&apos;t just clinical theory. It&apos;s lived wisdom designed to
@@ -22,7 +22,7 @@ const ShiftIntro = () => (
               alone - SHiFT meets you where you are.
             </span>
           </p>
-          <div className="flex gap-5 w-full">
+          <div className="flex w-full gap-5">
             {/* <Button
               text="Join the Beta"
               href="/"
@@ -59,10 +59,10 @@ const ShiftIntro = () => (
           alt="Therapy Reimagined"
         />
         <div className="flex flex-col gap-5 lg:gap-8 w-full lg:w-[60%]">
-          <h3 className="text-black text-4xl 2xl:text-5xl font-gothic font-bold">
+          <h3 className="text-4xl font-bold text-black 2xl:text-5xl font-gothic">
             Our content breaks the mold.
           </h3>
-          <p className="text-neutral-750 lg:text-xl font-proxima flex flex-col">
+          <p className="flex flex-col text-neutral-750 lg:text-xl font-proxima">
             SHiFT MasterSessions is a groundbreaking video series that redefines
             what it means to learn from a therapist.
             <span className="mt-5">
@@ -81,7 +81,7 @@ const ShiftIntro = () => (
               that change is possible when we are willing to do the work.
             </span>
           </p>
-          <p className="font-bold lg:text-xl text-black italic font-proxima">
+          <p className="italic font-bold text-black lg:text-xl font-proxima">
             Relatable. Inspirational. Deeply human.
           </p>
         </div>
