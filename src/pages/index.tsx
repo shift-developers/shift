@@ -32,7 +32,7 @@ const Home = ({ therapists, testimonials, homepageVideo }: HomeProps) => {
       <Banner
         header={
           <>
-            A New Era of Mental Health. A Movement of Healing -{" "}
+            A Modern Approach to Mental Health. A Movement of Healing -{" "}
             <span className="italic">Together.</span>
           </>
         }
