@@ -1,8 +1,8 @@
 import { DefaultSeoProps } from "next-seo";
 
 const defaultSEOConfig: DefaultSeoProps = {
-  title: "SHiFT – A New Era of Mental Health",
-  defaultTitle: "SHiFT – A New Era of Mental Health",
+  title: "SHiFT – A Modern Approach to Mental Health",
+  defaultTitle: "SHiFT – A Modern Approach to Mental Health",
   description:
     "SHiFT is reimagining mental health through engaging content, expert voices, and an inclusive movement. Explore real healing with relatable therapy, trusted resources, and daily support in your journey to better mental well-being.",
   canonical: "https://shiftmastersessions.com",
@@ -11,7 +11,7 @@ const defaultSEOConfig: DefaultSeoProps = {
     locale: "en_US",
     url: "https://shiftmastersessions.com",
     siteName: "SHiFT",
-    title: "SHiFT – A New Era of Mental Health",
+    title: "SHiFT – A Modern Approach to Mental Health",
     description:
       "SHiFT is reimagining mental health through engaging content, expert voices, and an inclusive movement. Explore real healing with relatable therapy, trusted resources, and daily support in your journey to better mental well-being.",
     images: [
