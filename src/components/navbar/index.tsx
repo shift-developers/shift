@@ -12,7 +12,7 @@ export default function Navbar() {
 
   return (
     <>
-      <header className="fixed top-0 left-0 w-full z-50 backdrop-blur-md shadow-sm bg-blue/40">
+      <header className="absolute top-0 left-0 w-full z-50">
         <div className="my-container">
           <div className="py-5 flex items-center justify-between">
             <Link href="/">
