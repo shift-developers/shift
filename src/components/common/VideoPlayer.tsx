@@ -1,7 +1,6 @@
 "use client";
 
-import React, { useRef, useEffect } from "react";
-import { useIntersectionObserver } from "@/hooks/useIntersectionObserver";
+import React from "react";
 
 interface VideoPlayerProps {
   src: string;
@@ -18,35 +17,9 @@ const VideoPlayer = ({
   className = "",
   poster,
 }: VideoPlayerProps) => {
-  const videoRef = useRef<HTMLVideoElement>(null);
-  const { ref: containerRef, isIntersecting } = useIntersectionObserver({
-    threshold: 0.3, // Start playing when 30% of video is visible
-    rootMargin: "0px",
-  });
-
-  useEffect(() => {
-    const video = videoRef.current;
-    if (!video) return;
-
-    if (isIntersecting) {
-      // Play video when it comes into view
-      video.play().catch((error) => {
-        // Auto-play might be blocked by browser policy
-        console.log("Auto-play was prevented:", error);
-      });
-    } else {
-      // Pause video when it goes out of view
-      video.pause();
-    }
-  }, [isIntersecting]);
-
   return (
-    <div
-      ref={containerRef as React.RefObject<HTMLDivElement>}
-      className={`${className}`}
-    >
+    <div className={className}>
       <video
-        ref={videoRef}
         width={width}
         height={height}
         controls

@@ -25,7 +25,7 @@ const Banner = ({ header, description, buttons }: BannerProps) => {
         <h1 className="text-4xl lg:text-7xl 2xl:text-8xl text-pure-white font-bold font-gothic leading-[110%]">
           {header}
         </h1>
-        <p className="text-sm lg:text-lg 2xl:text-xl text-pure-white font-bold font-gothic leading-[110%] lg:w-1/2">
+        <p className="text-sm lg:text-lg 2xl:text-xl text-pure-white font-bold font-gothic leading-relaxed lg:w-1/2">
           {description}
         </p>
 

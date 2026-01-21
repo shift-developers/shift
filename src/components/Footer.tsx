@@ -149,7 +149,7 @@ export default function Footer() {
                     placeholder="Email"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
-                    className="pl-6 pr-24 lg:pr-36 py-3 lg:py-3.5 rounded-full text-black text-base focus:outline-none border-none w-full"
+                    className="pl-6 pr-24 lg:pr-36 py-3 lg:py-3.5 rounded-full text-black text-base focus:outline-none border-none w-full bg-white"
                     disabled={isSubmitting}
                   />
                   <div className="absolute right-0">
@@ -227,7 +227,7 @@ export default function Footer() {
 
           {/* Copyright */}
           <div className="text-[14px] md:text-[16px] text-pure-white font-proxima font-bold border-t border-white/20 pt-6">
-            © 2025 | SHiFT App Inc | All Rights Reserved.
+            © 2026 | SHiFT App Inc | All Rights Reserved.
           </div>
         </div>
       </div>
