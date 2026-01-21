@@ -1,0 +1,84 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "keen-slider/keen-slider.min.css";
+@import "../styles/fonts/proximanova.css";
+@import "../styles/fonts/centurygothic.css";
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  --inter: "Inter", sans-serif;
+  --radius: 0.625rem;
+  --pure-white: #FFFFFF;
+  --white: #F3F6F8;
+  --dark-blue: #062287;
+  --light-blue: #0177DF;
+  --blue: #0076DE;
+  --black: #151515;
+  --neutral-750: #393E4B;
+  --background: oklch(0.98 0 0);
+  --foreground: oklch(0.12 0 0);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.12 0 0);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.12 0 0);
+  --primary: oklch(0.31 0.17 267);
+  --primary-foreground: oklch(0.98 0 0);
+  --secondary: oklch(0.96 0 0);
+  --secondary-foreground: oklch(0.12 0 0);
+  --muted: oklch(0.96 0 0);
+  --muted-foreground: oklch(0.55 0 0);
+  --accent: oklch(0.96 0 0);
+  --accent-foreground: oklch(0.12 0 0);
+  --destructive: oklch(0.55 0.2 27);
+  --destructive-foreground: oklch(0.98 0 0);
+  --border: oklch(0.92 0 0);
+  --input: oklch(0.92 0 0);
+  --ring: oklch(0.31 0.17 267);
+}
+
+@theme inline {
+  --font-inter: "Inter", sans-serif;
+  --font-proxima: "Proxima Nova", sans-serif;
+  --font-gothic: "Century Gothic Paneuropean", sans-serif;
+  --color-pure-white: var(--pure-white);
+  --color-white: var(--white);
+  --color-dark-blue: var(--dark-blue);
+  --color-light-blue: var(--light-blue);
+  --color-blue: var(--blue);
+  --color-black: var(--black);
+  --color-neutral-750: var(--neutral-750);
+  --breakpoint-xl2: 1200px;
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+}
+
+body {
+  background: #f3f6f8;
+  color: var(--foreground);
+  font-family: var(--inter), Helvetica, sans-serif;
+}
+
+.my-container {
+  @apply max-w-[1920px] mx-auto px-5 lg:px-24 2xl:px-40;
+}
+
+@media screen and (min-width: 1536px) and (max-width: 1920px) {
+  .custom-padding {
+    @apply !pl-40;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1535px) {
+  .custom-padding {
+    @apply !pl-24;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .custom-padding {
+    @apply !pl-5;
+  }
+}
