@@ -33,12 +33,7 @@ const Home = ({ therapists, testimonials, homepageVideo }: HomeProps) => {
         header={<>A Modern Approach to Mental Health</>}
         description="Therapists who have navigated life's challenges use their lived experience to guide and support your healing and transformation."
         buttons={[
-          { type: "primary", text: "Coming Soon", href: "https://go.shiftmastersessions.com/?code=ALLACCESS2025&type=free" },
-          {
-            type: "secondary",
-            text: "Join Waitlist",
-            href: "https://shiftmastersessions.kit.com/02136d09de",
-          },
+          { type: "primary", text: "Sign Up", href: "https://go.shiftmastersessions.com/?code=ALLACCESS2025&type=free" },
         ]}
       />
       <ShiftIntro />
