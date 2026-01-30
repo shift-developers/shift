@@ -73,7 +73,7 @@ const WhoWeArePage = ({ team }: Props) => {
             ))}
           </div>
           <div className="flex justify-center mt-10 mb-0 2xl:mb-40">
-            <Button type="primary" text="Join Waitlist" href="https://shiftmastersessions.kit.com/02136d09de" />
+            <Button type="primary" text="Sign Up" href="https://go.shiftmastersessions.com/?code=ALLACCESS2025&type=free" />
           </div>
         </div>
 

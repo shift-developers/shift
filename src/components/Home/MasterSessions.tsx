@@ -54,7 +54,7 @@ const MasterSessions = () => {
           <div className="flex flex-col gap-[14px] items-center">
             <div className="flex items-center">
               <p className="text-center text-2xl lg:text-[30px] font-bold font-gothic">
-                $49
+                $29
               </p>
               <span className="text-sm font-normal lg:text-[22px] font-proxima mt-[12px]">
                 /month, less than a single therapy session
@@ -64,24 +64,8 @@ const MasterSessions = () => {
             <Button
               type="primary"
               color="blue"
-              text="Coming Soon"
-              href="/"
-              className="w-[270px]"
-            />
-          </div>
-          <div className="flex flex-col items-center gap-[14px]">
-            <p className="text-center text-2xl lg:text-[30px] font-bold font-gothic">
-              $29
-              <span className="text-sm font-normal lg:text-[22px] font-proxima mt-[12px]">
-                /month, founders rate, for our beta
-              </span>
-            </p>
-
-            <Button
-              type="secondary"
-              color="blue"
-              text="Join Waitlist"
-              href="https://shiftmastersessions.kit.com/02136d09de"
+              text="Sign Up"
+              href="https://go.shiftmastersessions.com/?code=ALLACCESS2025&type=free"
               className="w-[270px]"
             />
           </div>
